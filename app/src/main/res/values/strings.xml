@@ -1,0 +1,22 @@
+<resources>
+    <string name="random_dog_generator">Random Dog Generator!</string>
+    <string name="clear_dogs">Clear Dogs!</string>
+    <string name="generate">Generate!</string>
+    <string name="menu">Menu</string>
+    <string name="logout">Logout</string>
+    <string name="recently_generated">My Recently Generated Dog!</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_pin">Verify Pin</string>
+    <string name="welcome_message">Welcome to Daily Khana</string>
+    <string name="enter_pin">Enter 4 Digit Login Pin</string>
+    <string name="wrong_pin">Enter Valid Pin</string>
+    <string name="user_name_demo">John Doe</string>
+    <string name="user_role_demo">Manager</string>
+    <string name="transaction">Transaction</string>
+    <string name="logout_message">Are you sure, you want to logout?</string>
+
+</resources>

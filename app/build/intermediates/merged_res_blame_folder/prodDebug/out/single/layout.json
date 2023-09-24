@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-mergeProdDebugResources-54:/layout/activity_login.xml",
+        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-mergeProdDebugResources-54:/layout/activity_main.xml",
+        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.codengineassessment.app-mergeProdDebugResources-54:/layout/activity_main.xml",
+        "source": "com.codengineassessment.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-mergeProdDebugResources-54:/layout/dialog_custum_progress.xml",
+        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/dialog_custum_progress.xml"
+    },
+    {
+        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-mergeProdDebugResources-54:/layout/activity_splash.xml",
+        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/activity_splash.xml"
+    }
+]

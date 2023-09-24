@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.codengineassessment.app-mergeProdDebugResources-53:/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/yashbhardwaj/Desktop/Codengine_Assessment/app/src/main/res/values-xxhdpi/dimens.xml",
+                    "from": {
+                        "startLines": "3,11,10,4,6,7,8,9,5,16,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "103,444,405,149,233,276,319,362,192,629,491,537,583",
+                        "endColumns": "45,45,38,42,42,42,42,42,40,49,45,45,45",
+                        "endOffsets": "144,485,439,187,271,314,357,400,228,674,532,578,624"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,147,186,229,272,315,358,401,442,492,538,584",
+                        "endColumns": "45,45,38,42,42,42,42,42,40,49,45,45,45",
+                        "endOffsets": "96,142,181,224,267,310,353,396,437,487,533,579,625"
+                    }
+                }
+            ]
+        }
+    ]
+}
