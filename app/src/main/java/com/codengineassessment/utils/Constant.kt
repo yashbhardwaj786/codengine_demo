@@ -11,6 +11,9 @@ class Constant {
         const val PREF_USER_NAME = "userName"
         const val PREF_USER_PROFILE_PIC = "userProfilePic"
         const val PREF_USER_TYPE = "userType"
+        const val ON_START = "ON_START"
+        const val ON_DATA_FAILURE = "ON_DATA_FAILURE"
+        const val CART_COUNT = "CART_COUNT"
 
     }
 

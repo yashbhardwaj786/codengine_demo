@@ -22,6 +22,13 @@ class PreferenceProvider(var context: Context) {
     fun getData(key: String): String? {
         return preference.getString(key, null)
     }
+    fun saveLong(key: String, value: Long) {
+        preference.edit().putLong(key, value).apply()
+    }
+
+    fun getLong(key: String, defaultValue: Long): Long? {
+        return preference.getLong(key, defaultValue)
+    }
 
 
     fun saveImagesJsonObject(imagesObj: ArrayList<String?>) {

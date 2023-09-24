@@ -10,6 +10,9 @@ import com.codengineassessment.databinding.ActivityLoginBindingImpl;
 import com.codengineassessment.databinding.ActivityMainBindingImpl;
 import com.codengineassessment.databinding.ActivitySplashBindingImpl;
 import com.codengineassessment.databinding.DialogCustumProgressBindingImpl;
+import com.codengineassessment.databinding.FragmentMenuBindingImpl;
+import com.codengineassessment.databinding.LayoutCategoryItemBindingImpl;
+import com.codengineassessment.databinding.LayoutProductItemBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -29,13 +32,22 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_DIALOGCUSTUMPROGRESS = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_FRAGMENTMENU = 5;
+
+  private static final int LAYOUT_LAYOUTCATEGORYITEM = 6;
+
+  private static final int LAYOUT_LAYOUTPRODUCTITEM = 7;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.activity_login, LAYOUT_ACTIVITYLOGIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.dialog_custum_progress, LAYOUT_DIALOGCUSTUMPROGRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.fragment_menu, LAYOUT_FRAGMENTMENU);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.layout_category_item, LAYOUT_LAYOUTCATEGORYITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.codengineassessment.R.layout.layout_product_item, LAYOUT_LAYOUTPRODUCTITEM);
   }
 
   @Override
@@ -70,6 +82,24 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new DialogCustumProgressBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for dialog_custum_progress is invalid. Received: " + tag);
+        }
+        case  LAYOUT_FRAGMENTMENU: {
+          if ("layout/fragment_menu_0".equals(tag)) {
+            return new FragmentMenuBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_menu is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LAYOUTCATEGORYITEM: {
+          if ("layout/layout_category_item_0".equals(tag)) {
+            return new LayoutCategoryItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for layout_category_item is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LAYOUTPRODUCTITEM: {
+          if ("layout/layout_product_item_0".equals(tag)) {
+            return new LayoutProductItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for layout_product_item is invalid. Received: " + tag);
         }
       }
     }
@@ -116,22 +146,28 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(2);
+    static final SparseArray<String> sKeys = new SparseArray<String>(5);
 
     static {
       sKeys.put(0, "_all");
-      sKeys.put(1, "viewModel");
+      sKeys.put(1, "data");
+      sKeys.put(2, "isSelected");
+      sKeys.put(3, "position");
+      sKeys.put(4, "viewModel");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
 
     static {
       sKeys.put("layout/activity_login_0", com.codengineassessment.R.layout.activity_login);
       sKeys.put("layout/activity_main_0", com.codengineassessment.R.layout.activity_main);
       sKeys.put("layout/activity_splash_0", com.codengineassessment.R.layout.activity_splash);
       sKeys.put("layout/dialog_custum_progress_0", com.codengineassessment.R.layout.dialog_custum_progress);
+      sKeys.put("layout/fragment_menu_0", com.codengineassessment.R.layout.fragment_menu);
+      sKeys.put("layout/layout_category_item_0", com.codengineassessment.R.layout.layout_category_item);
+      sKeys.put("layout/layout_product_item_0", com.codengineassessment.R.layout.layout_product_item);
     }
   }
 }

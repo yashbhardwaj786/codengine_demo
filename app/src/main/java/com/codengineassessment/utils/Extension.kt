@@ -7,8 +7,12 @@ import android.os.Build
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.codengineassessment.data.preferences.PreferenceProvider
+import com.codengineassessment.utils.Constant.Companion.CART_COUNT
+import java.io.IOException
 
 fun isInternetAvailable(ctx: Context): Boolean {
     var result = false
@@ -46,4 +50,31 @@ infix fun Context.hideKeyboard(view: View?) {
 
 fun nullSafeErrorLogging(errorMessage: String?): Exception {
     return if (errorMessage != null) EWException(errorMessage) else EWException(Constant.NULL_ERROR_MESSAGE)
+}
+
+fun loadJSONFromAsset(context: Context, fileName: String): String {
+    var json = ""
+    try {
+        val `is` = context.assets.open(fileName)
+        val size = `is`.available()
+        val buffer = ByteArray(size)
+        `is`.read(buffer)
+        `is`.close()
+        json = String(buffer, charset("UTF-8"))
+    } catch (ex: IOException) {
+        ex.printStackTrace()
+        return json
+    }
+
+    return json
+}
+
+fun showCartCount(cartCount: TextView?, prefs: PreferenceProvider) {
+    val count = prefs.getLong(CART_COUNT, 0) ?: 0
+    if (count > 0) {
+        cartCount?.text = "$count"
+        cartCount?.visibility = View.VISIBLE
+    } else {
+        cartCount?.visibility = View.GONE
+    }
 }

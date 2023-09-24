@@ -48,13 +48,13 @@ com.codengineassessment.app-jetified-startup-runtime-1.1.1-46 /Users/yashbhardwa
 com.codengineassessment.app-databinding-adapters-7.4.1-47 /Users/yashbhardwaj/.gradle/caches/transforms-3/f8355691b5a17c8797e1ae7092323f2a/transformed/databinding-adapters-7.4.1/res
 com.codengineassessment.app-lifecycle-viewmodel-2.6.2-48 /Users/yashbhardwaj/.gradle/caches/transforms-3/f9ae6087d82ec9edc81783519aaed14a/transformed/lifecycle-viewmodel-2.6.2/res
 com.codengineassessment.app-jetified-emoji2-views-helper-1.2.0-49 /Users/yashbhardwaj/.gradle/caches/transforms-3/fac9fd8a0f1ce74f2e8bf8db85ef7821/transformed/jetified-emoji2-views-helper-1.2.0/res
-com.codengineassessment.app-prod-50 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/build/generated/res/pngs/prod/debug
-com.codengineassessment.app-prod-51 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/build/generated/res/resValues/prod/debug
-com.codengineassessment.app-prod-52 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/build/generated/res/rs/prod/debug
-com.codengineassessment.app-packageProdDebugResources-53 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/merged.dir
-com.codengineassessment.app-packageProdDebugResources-54 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/stripped.dir
-com.codengineassessment.app-merged_res-55 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/build/intermediates/merged_res/prodDebug
-com.codengineassessment.app-debug-56 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/src/debug/res
-com.codengineassessment.app-main-57 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/src/main/res
-com.codengineassessment.app-prod-58 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/src/prod/res
-com.codengineassessment.app-prodDebug-59 /Users/yashbhardwaj/Desktop/Codengine_Assessment/app/src/prodDebug/res
+com.codengineassessment.app-prod-50 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/pngs/prod/debug
+com.codengineassessment.app-prod-51 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/resValues/prod/debug
+com.codengineassessment.app-prod-52 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/rs/prod/debug
+com.codengineassessment.app-packageProdDebugResources-53 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/merged.dir
+com.codengineassessment.app-packageProdDebugResources-54 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/stripped.dir
+com.codengineassessment.app-merged_res-55 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/merged_res/prodDebug
+com.codengineassessment.app-debug-56 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/debug/res
+com.codengineassessment.app-main-57 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/main/res
+com.codengineassessment.app-prod-58 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/prod/res
+com.codengineassessment.app-prodDebug-59 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/prodDebug/res

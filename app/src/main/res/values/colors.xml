@@ -6,6 +6,7 @@
     <color name="colorPrimary">#FAF9FA</color>
     <color name="colorAccent">@color/white</color>
     <color name="transparent">#00000000</color>
+    <color name="dusk_blue_two">#254078</color>
     <color name="black">#000000</color>
     <color name="black_2b">#25282B</color>
     <color name="blue">#4288F4</color>
@@ -20,4 +21,9 @@
     <color name="black_5">#0D000000</color>
     <color name="light_grey">#D3D3D3</color>
     <color name="brownish_grey">#6c6c6c</color>
+    <color name="bg_style_solid_color">@color/white</color>
+    <color name="soft_blue">#6896db</color>
+    <color name="screen_bg_off_white_color">#FBFBFB</color>
+    <color name="cart_shadow">@color/screen_bg_off_white_color</color>
+    <color name="coral">#eb5757</color>
 </resources>

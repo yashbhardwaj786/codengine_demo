@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="bg_style_solid_color">@color/white</color>
     <color name="black">#000000</color>
     <color name="black_2b">#25282B</color>
     <color name="black_5">#0D000000</color>
     <color name="blue">#4288F4</color>
     <color name="brownish_grey">#6c6c6c</color>
+    <color name="cart_shadow">@color/screen_bg_off_white_color</color>
     <color name="colorAccent">@color/white</color>
     <color name="colorPrimary">#FAF9FA</color>
     <color name="colorPrimaryDark">#E2E2E2</color>
+    <color name="coral">#eb5757</color>
     <color name="dark_blue_grey">#0f1e3d</color>
+    <color name="dusk_blue_two">#254078</color>
     <color name="grey_61">#5e5f61</color>
     <color name="grey_cd">#E8E8E8</color>
     <color name="light_blue">#6699cc</color>
@@ -16,18 +20,25 @@
     <color name="menu_bg_color">#3C3940</color>
     <color name="nav_drawer_divider">#6D6B70</color>
     <color name="purple_color">#996BA7</color>
+    <color name="screen_bg_off_white_color">#FBFBFB</color>
+    <color name="soft_blue">#6896db</color>
     <color name="tomato_55">#8ced2525</color>
     <color name="toolbar_color">@color/colorPrimaryDark</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="add_to_cart">Add to cart</string>
     <string name="app_name" translatable="false">"Codengine Assessment"</string>
+    <string name="category_name">Burger</string>
     <string name="clear_dogs">Clear Dogs!</string>
     <string name="close_drawer">Close</string>
     <string name="enter_pin">Enter 4 Digit Login Pin</string>
+    <string name="food_name">Cheese Grilled Sandwich</string>
+    <string name="food_price">$ 50.10</string>
+    <string name="food_quantity">1</string>
     <string name="generate">Generate!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logout">Logout</string>
-    <string name="logout_message">Are you sure, you want to logOut?</string>
+    <string name="logout_message">Are you sure, you want to logout?</string>
     <string name="menu">Menu</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="open_drawer">Open</string>

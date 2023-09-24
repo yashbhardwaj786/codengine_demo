@@ -35,6 +35,7 @@ import com.codengineassessment.utils.Constant.Companion.PREF_USER_NAME
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_PROFILE_PIC
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_TYPE
 import com.codengineassessment.utils.showAlertDialog
+import com.codengineassessment.utils.showCartCount
 import com.google.android.material.navigation.NavigationView
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
@@ -48,7 +49,7 @@ class MainActivity : BaseActivity() {
     override val dataBinding: Boolean = true
     override val layoutResource: Int = R.layout.activity_main
     private val prefs: PreferenceProvider by instance()
-
+    lateinit var cartCountHome: TextView
     lateinit var name: String
     private var doubleBackToExitPressedOnce = false
     lateinit var navController: NavController
@@ -74,10 +75,11 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        cartCountHome = findViewById(R.id.cartCount)
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         setToolBar(getString(R.string.menu))
         setSupportActionBar(toolbar)
+        showCartCount(cartCountHome, prefs)
 
         val userName = prefs.getData(PREF_USER_NAME).toString()
         val userImage = prefs.getData(PREF_USER_PROFILE_PIC).toString()
@@ -153,7 +155,7 @@ class MainActivity : BaseActivity() {
         imageUrl?.let {url->
             val eDrawable =
                 ContextCompat.getDrawable(this, R.drawable.ic_profile_placeholder)
-            BindingUtil.setImage(navUserImage, imageUrl, eDrawable)
+            BindingUtil.setCircularImage(navUserImage, imageUrl, eDrawable)
         }
 
     }

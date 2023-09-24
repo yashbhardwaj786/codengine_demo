@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.codengineassessment.ui.viewmodel.MenuViewModel" />
+
+        <variable
+            name="data"
+            type="com.codengineassessment.data.model.Food" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_15dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="@dimen/margin_3dp"
+            android:minWidth="200dp"
+            android:orientation="vertical"
+            android:translationZ="@dimen/margin_3dp"
+            app:cardBackgroundColor="@color/bg_style_solid_color"
+            app:cardCornerRadius="@dimen/margin_12dp"
+            app:cardElevation="@dimen/margin_0dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/foodImage"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    app:errorDrawable="@{@drawable/ic_image_placeholder_wrapper}"
+                    app:imageUrl="@{data.foodImage}"
+                    tools:srcCompat="@drawable/big_mac" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/foodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.foodName}"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold"
+                    tools:text="@string/food_name" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.quantity}"
+                    tools:text="@string/food_quantity"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/text_size_12sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{`$`+data.foodPrice}"
+                    tools:text="@string/food_price"
+                    android:textColor="@color/soft_blue"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_margin="@dimen/margin_3dp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/soft_blue"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:paddingVertical="@dimen/margin_10dp"
+                    android:text="@string/add_to_cart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

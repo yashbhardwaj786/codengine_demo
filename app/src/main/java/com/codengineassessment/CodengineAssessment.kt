@@ -6,11 +6,12 @@ import android.content.ComponentCallbacks2
 import android.content.Context
 import android.os.Bundle
 import com.codengineassessment.data.preferences.PreferenceProvider
-import com.codengineassessment.repository.GenerateDogRepository
+import com.codengineassessment.repository.MenuRepository
 import com.codengineassessment.ui.viewmodelfactory.MainViewModelFactory
 import com.codengineassessment.network.NetworkConnectionInterceptor
 import com.codengineassessment.network.NetworkModule
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
+import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
@@ -47,9 +48,10 @@ class CodengineAssessment :
         import(androidXModule(this@CodengineAssessment))
         bind() from singleton { NetworkConnectionInterceptor(instance()) }
         bind() from singleton { PreferenceProvider(instance()) }
-        bind() from provider { GenerateDogRepository(NetworkModule.formService) }
+        bind() from provider { MenuRepository(NetworkModule.formService) }
         bind() from provider { MainViewModelFactory() }
         bind() from provider { LoginViewModelFactory() }
+        bind() from provider { MenuViewModelFactory(instance()) }
     }
 
     override fun onActivityCreated(p0: Activity, p1: Bundle?) {

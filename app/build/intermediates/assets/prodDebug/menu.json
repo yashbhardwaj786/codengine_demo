@@ -1,0 +1,284 @@
+{
+  "categories": [
+    {
+      "categoryId": 1001,
+      "categoryName": "Sandwich",
+      "categoryImage": "sandwich",
+      "food": [
+        {
+          "foodId": 101,
+          "foodName": "Cheese Grilled Sandwich",
+          "foodImage": "cheese_grilled_sandwich",
+          "foodPrice": 100,
+          "quantity": "1"
+        },
+        {
+          "foodId": 102,
+          "foodName": "Club Cheese Sandwich",
+          "foodImage": "club_cheese_sandwich",
+          "foodPrice": 150,
+          "quantity": "1"
+        },
+        {
+          "foodId": 103,
+          "foodName": "Corn Grilled Sandwich",
+          "foodImage": "corn_grilled_sandwich",
+          "foodPrice": 100,
+          "quantity": "1"
+        },
+        {
+          "foodId": 104,
+          "foodName": "Paneer Club Sandwich",
+          "foodImage": "paneer_club_sandwich",
+          "foodPrice": 200,
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "categoryId": 1002,
+      "categoryName": "Burgers",
+      "categoryImage": "burger",
+      "food": [
+        {
+          "foodId": 201,
+          "foodName": "Big Mac",
+          "foodImage": "big_mac",
+          "foodPrice": 28,
+          "quantity": "1"
+        },
+        {
+          "foodId": 202,
+          "foodName": "Quarter Pounder With Cheese",
+          "foodImage": "quarter_pounder_cheese",
+          "foodPrice": 45,
+          "quantity": "1"
+        },
+        {
+          "foodId": 203,
+          "foodName": "Double Quarter Pounder",
+          "foodImage": "double_quarter_pounder",
+          "foodPrice": 60,
+          "quantity": "1"
+        },
+        {
+          "foodId": 204,
+          "foodName": "McDouble",
+          "foodImage": "mcdouble",
+          "foodPrice": 80,
+          "quantity": "1"
+        },
+        {
+          "foodId": 205,
+          "foodName": "CheeseBurger",
+          "foodImage": "cheese_burger",
+          "foodPrice": 100,
+          "quantity": "1"
+        },
+        {
+          "foodId": 206,
+          "foodName": "Hamburger",
+          "foodImage": "hamburger",
+          "foodPrice": 120,
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "categoryId": 1003,
+      "categoryName": "Cocktails",
+      "categoryImage": "cocktails",
+      "food": [
+        {
+          "foodId": 301,
+          "foodName": "Caramel Macchiato",
+          "foodImage": "caramel_macchiato",
+          "foodPrice": 150,
+          "quantity": "1"
+        },
+        {
+          "foodId": 302,
+          "foodName": "Mocha Latte",
+          "foodImage": "mocha_latte",
+          "foodPrice": 180,
+          "quantity": "1"
+        },
+        {
+          "foodId": 303,
+          "foodName": "Americano",
+          "foodImage": "americano",
+          "foodPrice": 200,
+          "quantity": "1"
+        },
+        {
+          "foodId": 304,
+          "foodName": "Premium Roast Coffee",
+          "foodImage": "premium_roast_coffee",
+          "foodPrice": 200,
+          "quantity": "1"
+        },
+        {
+          "foodId": 305,
+          "foodName": "Iced Caramel Macchiato",
+          "foodImage": "iced_caramel_macchiato",
+          "foodPrice": 250,
+          "quantity": "1"
+        },
+        {
+          "foodId": 306,
+          "foodName": "Iced Mocha",
+          "foodImage": "iced_mocha",
+          "foodPrice": 100,
+          "quantity": "1"
+        }
+      ]
+    },
+    {
+      "categoryId": 1004,
+      "categoryName": "Beer",
+      "categoryImage": "beer",
+      "food": [
+        {
+          "foodId": 401,
+          "foodName": "KINGFISHER STRONG",
+          "foodImage": "kingfisher_strong",
+          "foodPrice": 190,
+          "quantity": "650ml"
+        },
+        {
+          "foodId": 402,
+          "foodName": "LONDON PILSNER STRONG",
+          "foodImage": "london_pilsner",
+          "foodPrice": 165,
+          "quantity": "650ml"
+        },
+        {
+          "foodId": 403,
+          "foodName": "BIRA BOOM",
+          "foodImage": "bira_room",
+          "foodPrice": 190,
+          "quantity": "650ml"
+        },
+        {
+          "foodId": 404,
+          "foodName": "BIRA GOLD STRONG",
+          "foodImage": "bira_gold_strong",
+          "foodPrice": 240,
+          "quantity": "650ml"
+        }
+      ]
+    },
+    {
+      "categoryId": 1005,
+      "categoryName": "Shakes",
+      "categoryImage": "juice",
+      "food": [
+        {
+          "foodId": 501,
+          "foodName": "Maaza Mango Drink",
+          "foodImage": "maaza_mango_drink",
+          "foodPrice": 55,
+          "quantity": "1.2L"
+        },
+        {
+          "foodId": 502,
+          "foodName": "B Natural Mixed Fruit Juice",
+          "foodImage": "natural_mixed_fruit",
+          "foodPrice": 65,
+          "quantity": "1L"
+        },
+        {
+          "foodId": 503,
+          "foodName": "Storia Tender Coconut Water",
+          "foodImage": "coconut_water",
+          "foodPrice": 85,
+          "quantity": "1L"
+        },
+        {
+          "foodId": 504,
+          "foodName": "Frooti Mango Drink",
+          "foodImage": "frooti_mango_drink",
+          "foodPrice": 89,
+          "quantity": "2L"
+        },
+        {
+          "foodId": 505,
+          "foodName": "Real Fruit Power Orange Juice",
+          "foodImage": "real_fruit_orange",
+          "foodPrice": 105,
+          "quantity": "1L"
+        }
+      ]
+    },
+    {
+      "categoryId": 1006,
+      "categoryName": "Desserts",
+      "categoryImage": "cupcake_dessert",
+      "food": [
+        {
+          "foodId": 601,
+          "foodName": "Chocochips And Oreo Cake Combo",
+          "foodImage": "chocochips_oreo_cake",
+          "foodPrice": 299,
+          "quantity": 2
+        },
+        {
+          "foodId": 602,
+          "foodName": "Multi Flavored Cupcakes",
+          "foodImage": "multi_flavored_cupcakes",
+          "foodPrice": 599,
+          "quantity": 6
+        },
+        {
+          "foodId": 603,
+          "foodName": "Chocolate Truffle Pastry",
+          "foodImage": "chocolate_truffle",
+          "foodPrice": 99,
+          "quantity": 1
+        },
+        {
+          "foodId": 604,
+          "foodName": "Red Velvet Single Jar Cake",
+          "foodImage": "redvelvet_jar_cake",
+          "foodPrice": 149,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "categoryId": 1007,
+      "categoryName": "Chips",
+      "categoryImage": "chips",
+      "food": [
+        {
+          "foodId": 701,
+          "foodName": "Lay's India's Magic Masala Chips",
+          "foodImage": "magic_masala_chips",
+          "foodPrice": 20,
+          "quantity": "40g"
+        },
+        {
+          "foodId": 702,
+          "foodName": "Uncle Chipps Spicy Treat",
+          "foodImage": "uncle_chips",
+          "foodPrice": 20,
+          "quantity": "50g"
+        },
+        {
+          "foodId": 703,
+          "foodName": "Kurkure Masala Munch Crisps ",
+          "foodImage": "kurkure_masala_munch",
+          "foodPrice": 20,
+          "quantity": "82g"
+        },
+        {
+          "foodId": 704,
+          "foodName": "Doritos Cheese Nachos",
+          "foodImage": "doritos_cheese",
+          "foodPrice": 30,
+          "quantity": "60g"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.codengineassessment.ui.viewmodel.MenuViewModel" />
+        <variable
+            name="isSelected"
+            type="Boolean" />
+        <variable
+            name="position"
+            type="Integer" />
+        <variable
+            name="data"
+            type="com.codengineassessment.data.model.Categories" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FBFBFB"
+        android:layout_marginEnd="@dimen/margin_10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:elevation="@dimen/margin_3dp"
+            android:orientation="vertical"
+            android:translationZ="@dimen/margin_3dp"
+            android:onClick="@{()-> viewModel.onCategoryClicked(data, position)}"
+            app:cardBackgroundColor="@{isSelected ? @color/blue : @color/bg_style_solid_color}"
+            tools:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="@dimen/margin_20dp"
+            app:cardElevation="@dimen/margin_0dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.177"
+                    android:tint="@{isSelected ? @color/white : @color/black}"
+                    tools:tint="@color/white"
+                    app:errorDrawable="@{@drawable/ic_image_placeholder_wrapper}"
+                    app:imageUrl="@{data.categoryImage}"
+                    tools:srcCompat="@drawable/burger" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:text="@{data.categoryName}"
+                    tools:textColor="@color/white"
+                    android:textColor="@{isSelected ? @color/white : @color/black}"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:textStyle="bold"
+                    tools:text="@string/category_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -6,5 +6,5 @@ import retrofit2.http.*
 
 interface FormService {
     @GET("breeds/image/random")
-    suspend fun generateDogImages(): Response<DogBreedResult>
+    suspend fun generateDogImages(): Response<MenuResult>
 }
