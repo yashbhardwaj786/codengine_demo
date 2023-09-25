@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginVertical="@dimen/margin_10dp"
-            android:paddingBottom="@dimen/margin_10dp"
+            android:paddingBottom="150dp"
             android:clipToPadding="false"
             android:fitsSystemWindows="true"
             android:overScrollMode="never"
