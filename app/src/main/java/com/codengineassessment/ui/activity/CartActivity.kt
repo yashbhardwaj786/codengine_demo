@@ -16,6 +16,7 @@ import com.codengineassessment.ui.adapter.CartListItemAdapter
 import com.codengineassessment.ui.viewmodel.CartViewModel
 import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.CONTINUE_SHOPPING_CLICKED
 import com.codengineassessment.ui.viewmodelfactory.CartViewModelFactory
+import com.codengineassessment.utils.Constant
 import com.codengineassessment.utils.showCartCount
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
@@ -56,7 +57,7 @@ class CartActivity : BaseActivity() {
         setToolBar(getString(R.string.checkout), true)
         val cartCountHome = findViewById<TextView>(R.id.cartCount)
         showCartCount(cartCountHome, prefs)
-        var cartItemProduct = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
+        val cartItemProduct = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
         cartViewModel.cartItemProductList = cartItemProduct
         if (cartItemProduct.isEmpty()) {
             cartViewModel.isCartEmpty.set(true)
@@ -64,6 +65,8 @@ class CartActivity : BaseActivity() {
             initRecyclerView()
             cartViewModel.isCartEmpty.set(false)
         }
+        val userType = prefs.getData(Constant.PREF_USER_TYPE)
+        binding.isManager = userType == Constant.MANAGER_TYPE
     }
 
     private fun initRecyclerView() {

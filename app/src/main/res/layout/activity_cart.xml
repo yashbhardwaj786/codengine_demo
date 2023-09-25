@@ -6,6 +6,9 @@
     <data>
         <import type="android.view.View"/>
         <variable
+            name="isManager"
+            type="Boolean" />
+        <variable
             name="viewModel"
             type="com.codengineassessment.ui.viewmodel.CartViewModel" />
     </data>
@@ -44,10 +47,163 @@
             app:spanCount="2"
             android:orientation="vertical"
             tools:itemCount="10"
-            tools:visibility="gone"
+            tools:visibility="visible"
             tools:listitem="@layout/layout_cart_item"
             app:layout_constraintTop_toBottomOf="@+id/appbar"
             app:layout_constraintVertical_bias="0.028" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E7E8EB"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.isCartEmpty ? View.GONE : View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="@string/subtotal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintBottom_toTopOf="@+id/tax"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="@string/tax"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/subTotalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="$10.97"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintBottom_toTopOf="@+id/taxValue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/taxValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8dp"
+                android:text="$0.90"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.40" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/black_50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tax"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirmPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/button_style"
+                android:elevation="@dimen/margin_3dp"
+                android:lineSpacingExtra="2.4sp"
+                android:minHeight="@dimen/margin_33dp"
+                android:paddingHorizontal="@dimen/margin_10dp"
+                android:paddingVertical="@dimen/margin_12dp"
+                android:stateListAnimator="@null"
+                android:text="@string/confirm_pay"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator"
+                app:layout_constraintVertical_bias="0.40"
+                app:lineHeight="@dimen/text_size_24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/toGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_10dp"
+                android:background="@drawable/button_style"
+                android:elevation="@dimen/margin_3dp"
+                android:lineSpacingExtra="2.4sp"
+                android:minHeight="@dimen/margin_33dp"
+                android:paddingHorizontal="@dimen/margin_10dp"
+                android:paddingVertical="@dimen/margin_12dp"
+                android:stateListAnimator="@null"
+                android:text="@string/togo"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12sp"
+                android:visibility="@{isManager ? View.VISIBLE : View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/confirmPay"
+                app:layout_constraintTop_toBottomOf="@+id/separator"
+                app:layout_constraintVertical_bias="0.40"
+                app:lineHeight="@dimen/text_size_24sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:text="@string/total"
+                android:textColor="#9F9FAB"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/totalValue"
+                app:layout_constraintTop_toBottomOf="@+id/separator"
+                app:layout_constraintVertical_bias="0.40" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/totalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:text="$11.87"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/separator"
+                app:layout_constraintVertical_bias="0.40" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,7 +217,7 @@
             android:gravity="center"
             android:orientation="vertical"
             android:visibility="@{viewModel.isCartEmpty ? View.VISIBLE : View.GONE}"
-            tools:visibility="visible">
+            tools:visibility="gone">
 
             <include
                 layout="@layout/empty_checkout_screen"
