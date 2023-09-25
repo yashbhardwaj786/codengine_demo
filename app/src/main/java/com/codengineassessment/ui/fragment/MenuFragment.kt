@@ -23,7 +23,9 @@ import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.ADD_TO_CART_
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.CATEGORY_CLICKED
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.ON_DATA_FETCH
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
+import com.codengineassessment.utils.Constant.Companion.CART_ITEM_ADDED
 import com.codengineassessment.utils.showCartCount
+import com.codengineassessment.utils.showToast
 import org.kodein.di.generic.instance
 
 class MenuFragment : BaseFragment() {
@@ -99,8 +101,8 @@ class MenuFragment : BaseFragment() {
                     }
                 }
                 prefs.saveCartJsonObject(cartList)
+                showToast(requireContext(), CART_ITEM_ADDED)
                 showCartCount(mainActivity.cartCountHome, prefs)
-                println("hh yashal ${cartList.toString()}")
             }
         }
     }

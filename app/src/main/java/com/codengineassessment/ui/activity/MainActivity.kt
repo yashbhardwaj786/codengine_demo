@@ -5,6 +5,7 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -78,6 +79,9 @@ class MainActivity : BaseActivity() {
         cartCountHome = findViewById(R.id.cartCount)
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         setToolBar(getString(R.string.menu))
+        findViewById<RelativeLayout>(R.id.cartLayout).setOnClickListener {
+            ModuleMaster.navigateToCartActivity(this)
+        }
         setSupportActionBar(toolbar)
         showCartCount(cartCountHome, prefs)
 

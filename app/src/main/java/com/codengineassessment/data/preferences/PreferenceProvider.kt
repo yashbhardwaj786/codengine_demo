@@ -12,7 +12,6 @@ import java.lang.reflect.Type
 class PreferenceProvider(var context: Context) {
     private var PRIVATE_MODE = 0
     private val PREFERENCE_NAME = "delphic_demo"
-    private val IMAGE_OBJ = "DogImageObject"
     private val preference: SharedPreferences
         get() =
             context.getSharedPreferences(PREFERENCE_NAME, PRIVATE_MODE)

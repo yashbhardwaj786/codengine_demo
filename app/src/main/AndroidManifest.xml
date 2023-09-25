@@ -18,9 +18,12 @@
         android:theme="@style/Theme.CodengineAssessment"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.LoginActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.activity.MainActivity"
             android:exported="false" />

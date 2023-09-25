@@ -10,6 +10,7 @@ import com.codengineassessment.repository.MenuRepository
 import com.codengineassessment.ui.viewmodelfactory.MainViewModelFactory
 import com.codengineassessment.network.NetworkConnectionInterceptor
 import com.codengineassessment.network.NetworkModule
+import com.codengineassessment.ui.viewmodelfactory.CartViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
 import org.kodein.di.Kodein
@@ -51,6 +52,7 @@ class CodengineAssessment :
         bind() from provider { MenuRepository(NetworkModule.formService) }
         bind() from provider { MainViewModelFactory() }
         bind() from provider { LoginViewModelFactory() }
+        bind() from provider { CartViewModelFactory() }
         bind() from provider { MenuViewModelFactory(instance()) }
     }
 

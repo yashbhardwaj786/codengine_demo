@@ -1,7 +1,11 @@
 package com.codengineassessment.common
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.text.TextUtils
+import android.view.View
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -23,6 +27,7 @@ abstract class BaseActivity  : AppCompatActivity(), KodeinAware {
     var title: TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         if (!dataBinding) {
             setContentView(layoutResource)
         } else {
@@ -70,7 +75,7 @@ abstract class BaseActivity  : AppCompatActivity(), KodeinAware {
 
     inline fun <reified T> lazyBinding(): Lazy<T> = lazy { getBinding() as T }
 
-    fun setToolBar(titleText: String) {
+    fun setToolBar(titleText: String, showBackButton: Boolean = false) {
         toolbar = findViewById(R.id.toolbar)
         title = findViewById(R.id.title)
         title?.text = titleText
@@ -78,5 +83,15 @@ abstract class BaseActivity  : AppCompatActivity(), KodeinAware {
         title?.ellipsize = TextUtils.TruncateAt.END
         toolbar?.contentInsetStartWithNavigation = 0
         setSupportActionBar(toolbar)
+        val backIconLayout = findViewById<LinearLayout>(R.id.backIconLayout)
+        if(showBackButton){
+            backIconLayout.visibility = View.VISIBLE
+        }else {
+            backIconLayout.visibility = View.INVISIBLE
+        }
+
+        backIconLayout.setOnClickListener {
+            finish()
+        }
     }
 }

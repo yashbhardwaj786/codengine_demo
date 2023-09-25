@@ -21,9 +21,23 @@ import com.codengineassessment.ui.viewmodel.LoginViewModel.Companion.VERIFY_CLIC
 import com.codengineassessment.ui.viewmodel.MainViewModel
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.MainViewModelFactory
+import com.codengineassessment.utils.Constant.Companion.EMPTY_PIN_MESSAGE
+import com.codengineassessment.utils.Constant.Companion.MANAGER_IMAGE
+import com.codengineassessment.utils.Constant.Companion.MANAGER_NAME
+import com.codengineassessment.utils.Constant.Companion.MANAGER_PIN
+import com.codengineassessment.utils.Constant.Companion.MANAGER_TYPE
+import com.codengineassessment.utils.Constant.Companion.MANAGER_USER_ID
+import com.codengineassessment.utils.Constant.Companion.PREF_USER_ID
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_NAME
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_PROFILE_PIC
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_TYPE
+import com.codengineassessment.utils.Constant.Companion.PROPER_PIN_MESSAGE
+import com.codengineassessment.utils.Constant.Companion.SERVER_IMAGE
+import com.codengineassessment.utils.Constant.Companion.SERVER_NAME
+import com.codengineassessment.utils.Constant.Companion.SERVER_PIN
+import com.codengineassessment.utils.Constant.Companion.SERVER_TYPE
+import com.codengineassessment.utils.Constant.Companion.SERVER_USER_ID
+import com.codengineassessment.utils.Constant.Companion.VALID_PIN_MESSAGE
 import com.codengineassessment.utils.hideKeyboard
 import com.google.android.material.internal.ViewUtils.hideKeyboard
 import org.kodein.di.android.kodein
@@ -58,25 +72,31 @@ class LoginActivity : BaseActivity() {
             VERIFY_CLICK -> {
                 hideKeyboard(binding.pinview)
                 if(loginViewModel.otp.isEmpty()){
-                    loginViewModel.errorMessage.set("Pin should not be empty")
+                    loginViewModel.errorMessage.set(EMPTY_PIN_MESSAGE)
                     loginViewModel.isValidPin.set(false)
                 }else if(loginViewModel.otp.length < 4){
-                    loginViewModel.errorMessage.set("Pin should be 4 digit")
+                    loginViewModel.errorMessage.set(PROPER_PIN_MESSAGE)
                     loginViewModel.isValidPin.set(false)
                 } else if(loginViewModel.otp.length == 4){
-                    if (loginViewModel.otp == "1111"){
-                        prefs.saveData(PREF_USER_NAME, "Yash Bhardwaj")
-                        prefs.saveData(PREF_USER_PROFILE_PIC, "user1")
-                        prefs.saveData(PREF_USER_TYPE, "Manager")
-                        ModuleMaster.navigateToMainActivity(this)
-                    }else if(loginViewModel.otp =="2222"){
-                        prefs.saveData(PREF_USER_NAME, "Tara Chand")
-                        prefs.saveData(PREF_USER_PROFILE_PIC, "user2")
-                        prefs.saveData(PREF_USER_TYPE, "Server")
-                        ModuleMaster.navigateToMainActivity(this)
-                    } else {
-                        loginViewModel.errorMessage.set("Enter Valid Pin")
-                        loginViewModel.isValidPin.set(false)
+                    when (loginViewModel.otp) {
+                        MANAGER_PIN -> {
+                            prefs.saveData(PREF_USER_NAME, MANAGER_NAME)
+                            prefs.saveData(PREF_USER_PROFILE_PIC, MANAGER_IMAGE)
+                            prefs.saveData(PREF_USER_TYPE, MANAGER_TYPE)
+                            prefs.saveData(PREF_USER_ID, MANAGER_USER_ID)
+                            ModuleMaster.navigateToMainActivity(this)
+                        }
+                        SERVER_PIN -> {
+                            prefs.saveData(PREF_USER_NAME, SERVER_NAME)
+                            prefs.saveData(PREF_USER_PROFILE_PIC, SERVER_IMAGE)
+                            prefs.saveData(PREF_USER_TYPE, SERVER_TYPE)
+                            prefs.saveData(PREF_USER_ID, SERVER_USER_ID)
+                            ModuleMaster.navigateToMainActivity(this)
+                        }
+                        else -> {
+                            loginViewModel.errorMessage.set(VALID_PIN_MESSAGE)
+                            loginViewModel.isValidPin.set(false)
+                        }
                     }
 
                 }
