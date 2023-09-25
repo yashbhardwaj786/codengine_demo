@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.codengineassessment.R
@@ -14,7 +15,7 @@ import com.codengineassessment.ui.viewmodel.CartViewModel
 
 class CartListItemAdapter(
     private val viewModel: CartViewModel,
-    private val cartItemList: ArrayList<CartItemProduct>,
+    var cartItemList: ArrayList<CartItemProduct>,
     private val preferenceProvider: PreferenceProvider
 
 ) : RecyclerView.Adapter<CartListItemAdapter.ProductViewHolder>() {
@@ -36,9 +37,18 @@ class CartListItemAdapter(
         val category = cartItemList[position]
         holder.binding.viewModel = viewModel
         holder.binding.data = category
+        holder.binding.increase.setOnClickListener {
+            viewModel.increaseQuantityCLick(category, holder.adapterPosition)
+        }
+        holder.binding.decrease.setOnClickListener {
+            viewModel.decreaseQuantityCLick(category, holder.adapterPosition)
+        }
     }
 
     class ProductViewHolder(itemView: View, var binding: LayoutCartItemBinding) :
         RecyclerView.ViewHolder(itemView) {
+    }
+    fun setNotifyDataChange() {
+        notifyDataSetChanged()
     }
 }

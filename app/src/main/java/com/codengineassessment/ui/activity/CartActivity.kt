@@ -13,8 +13,11 @@ import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.databinding.ActivityCartBinding
 import com.codengineassessment.notifiers.Notify
 import com.codengineassessment.ui.adapter.CartListItemAdapter
+import com.codengineassessment.ui.adapter.CategoryItemAdapter
 import com.codengineassessment.ui.viewmodel.CartViewModel
 import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.CONTINUE_SHOPPING_CLICKED
+import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.DECREASE_QUANTITY
+import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.INCREASE_QUANTITY
 import com.codengineassessment.ui.viewmodelfactory.CartViewModelFactory
 import com.codengineassessment.utils.Constant
 import com.codengineassessment.utils.showCartCount
@@ -29,6 +32,7 @@ class CartActivity : BaseActivity() {
     override val dataBinding: Boolean = true
     override val layoutResource: Int = R.layout.activity_cart
     private val prefs: PreferenceProvider by instance()
+    private lateinit var cartCountHome: TextView
 
     override fun getViewModel(): BaseViewModel {
         return cartViewModel
@@ -49,13 +53,47 @@ class CartActivity : BaseActivity() {
             CONTINUE_SHOPPING_CLICKED -> {
                 finish()
             }
+            INCREASE_QUANTITY -> {
+                val cartItemProduct = data.arguments[0] as CartItemProduct
+                val position = data.arguments[1] as Int
+                cartItemProduct.quantity = cartItemProduct.quantity?.plus(1)
+                val adapter = binding.productList.adapter as CartListItemAdapter
+                adapter.setNotifyDataChange()
+                updateCart(cartItemProduct, position)
+            }
+            DECREASE_QUANTITY -> {
+                val cartItemProduct = data.arguments[0] as CartItemProduct
+                val position = data.arguments[1] as Int
+                val adapter = binding.productList.adapter as CartListItemAdapter
+                adapter.setNotifyDataChange()
+                cartItemProduct.quantity = cartItemProduct.quantity?.minus(1)
+                updateCart(cartItemProduct, position)
+            }
+        }
+    }
+
+    private fun updateCart(cartItemProduct: CartItemProduct, position: Int){
+        val cartList = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
+        if(cartItemProduct.quantity == 0){
+            cartList.removeAt(position)
+            val adapter = binding.productList.adapter as CartListItemAdapter
+            adapter.cartItemList = cartList
+            adapter.setNotifyDataChange()
+        }else {
+            cartList[position] = cartItemProduct
+        }
+        prefs.saveCartJsonObject(cartList)
+        showCartCount(cartCountHome, prefs)
+        calculatePrice()
+        if(cartList.isEmpty()){
+            cartViewModel.isCartEmpty.set(true)
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setToolBar(getString(R.string.checkout), true)
-        val cartCountHome = findViewById<TextView>(R.id.cartCount)
+        cartCountHome = findViewById<TextView>(R.id.cartCount)
         showCartCount(cartCountHome, prefs)
         val cartItemProduct = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
         cartViewModel.cartItemProductList = cartItemProduct

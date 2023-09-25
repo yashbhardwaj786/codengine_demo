@@ -79,7 +79,6 @@ fun showCartCount(cartCount: TextView?, prefs: PreferenceProvider) {
             }
         }
     }
-    println("hh yashal count $count")
     if (count > 0) {
         cartCount?.text = "$count"
         cartCount?.visibility = View.VISIBLE

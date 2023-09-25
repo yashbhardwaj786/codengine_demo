@@ -71,7 +71,7 @@ class MenuFragment : BaseFragment() {
                 val foodData = data.arguments[0] as Food
                 val cartList = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
                 val cartItem = CartItemProduct()
-                cartList?.let {
+                cartList.let {
                     if(it.isEmpty()){
                         cartItem.apply {
                             foodId = foodData.foodId

@@ -83,7 +83,6 @@ class MainActivity : BaseActivity() {
             ModuleMaster.navigateToCartActivity(this)
         }
         setSupportActionBar(toolbar)
-        showCartCount(cartCountHome, prefs)
 
         val userName = prefs.getData(PREF_USER_NAME).toString()
         val userImage = prefs.getData(PREF_USER_PROFILE_PIC).toString()
@@ -241,5 +240,10 @@ class MainActivity : BaseActivity() {
     private fun clearData() {
         prefs.clearAllPref()
         ModuleMaster.navigateToLoginActivity(this)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        showCartCount(cartCountHome, prefs)
     }
 }
