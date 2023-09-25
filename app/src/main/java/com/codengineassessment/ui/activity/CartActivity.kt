@@ -63,6 +63,7 @@ class CartActivity : BaseActivity() {
             cartViewModel.isCartEmpty.set(true)
         } else {
             initRecyclerView()
+            calculatePrice()
             cartViewModel.isCartEmpty.set(false)
         }
         val userType = prefs.getData(Constant.PREF_USER_TYPE)
@@ -70,12 +71,33 @@ class CartActivity : BaseActivity() {
     }
 
     private fun initRecyclerView() {
-        binding.productList?.apply {
+        binding.productList.apply {
             hasFixedSize()
             layoutManager =
                 LinearLayoutManager(context)
             adapter =
                 CartListItemAdapter(cartViewModel, cartViewModel.cartItemProductList, prefs)
+        }
+    }
+
+    private fun calculatePrice(){
+        val cartItemList = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
+        var total = 0.0
+        var subTotal = 0.0
+        var tax = 0.0
+        if(cartItemList.isNotEmpty()){
+            for (i in cartItemList.indices){
+                subTotal += (cartItemList[i].quantity?.let { cartItemList[i].foodPrice?.times(it) })?.toDouble()
+                    ?: 0.0
+            }
+            tax = (subTotal * 8.25)/100
+            total = subTotal + tax
+            val roundOffTax = String.format("%.2f", tax)
+            val roundOffSubTotal = String.format("%.2f", subTotal)
+            val roundOffTotal = String.format("%.2f", total)
+            binding.subtotalAmount = roundOffSubTotal
+            binding.taxValueAmount = roundOffTax
+            binding.totalAmount = roundOffTotal
         }
     }
 }

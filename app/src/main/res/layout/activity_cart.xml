@@ -9,6 +9,15 @@
             name="isManager"
             type="Boolean" />
         <variable
+            name="subtotalAmount"
+            type="String" />
+        <variable
+            name="taxValueAmount"
+            type="String" />
+        <variable
+            name="totalAmount"
+            type="String" />
+        <variable
             name="viewModel"
             type="com.codengineassessment.ui.viewmodel.CartViewModel" />
     </data>
@@ -93,7 +102,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
-                android:text="$10.97"
+                tools:text="$10.97"
+                android:text="@{`$`+subtotalAmount}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size_14sp"
                 app:layout_constraintBottom_toTopOf="@+id/taxValue"
@@ -106,7 +116,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_8dp"
-                android:text="$0.90"
+                tools:text="$0.90"
+                android:text="@{`$`+taxValueAmount}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -194,7 +205,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_10dp"
-                android:text="$11.87"
+                tools:text="$11.87"
+                android:text="@{`$`+totalAmount}"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size_14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
