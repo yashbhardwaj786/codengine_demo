@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.view.View;
 @SuppressWarnings("unchecked")
-public class LayoutProductItemBindingImpl extends LayoutProductItemBinding  {
+public class LayoutProductItemBindingImpl extends LayoutProductItemBinding implements com.codengineassessment.generated.callback.OnClickListener.Listener {
 
     @Nullable
     private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
@@ -13,13 +13,14 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.save, 5);
+        sViewsWithIds = null;
     }
     // views
     @NonNull
     private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
     // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback1;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -41,8 +42,10 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding  {
         this.mboundView0.setTag(null);
         this.price.setTag(null);
         this.quantity.setTag(null);
+        this.save.setTag(null);
         setRootTag(root);
         // listeners
+        mCallback1 = new com.codengineassessment.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -81,6 +84,11 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding  {
 
     public void setViewModel(@Nullable com.codengineassessment.ui.viewmodel.MenuViewModel ViewModel) {
         this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
     }
     public void setData(@Nullable com.codengineassessment.data.model.Food Data) {
         this.mData = Data;
@@ -110,6 +118,7 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding  {
         java.lang.Long dataFoodPrice = null;
         java.lang.String dataQuantity = null;
         java.lang.String dataFoodName = null;
+        com.codengineassessment.ui.viewmodel.MenuViewModel viewModel = mViewModel;
         com.codengineassessment.data.model.Food data = mData;
 
         if ((dirtyFlags & 0x6L) != 0) {
@@ -140,9 +149,33 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding  {
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.price, javaLangStringDataFoodPrice);
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.quantity, dataQuantity);
         }
+        if ((dirtyFlags & 0x4L) != 0) {
+            // api target 1
+
+            this.save.setOnClickListener(mCallback1);
+        }
     }
     // Listener Stub Implementations
     // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        // localize variables for thread safety
+        // viewModel
+        com.codengineassessment.ui.viewmodel.MenuViewModel viewModel = mViewModel;
+        // data
+        com.codengineassessment.data.model.Food data = mData;
+        // viewModel != null
+        boolean viewModelJavaLangObjectNull = false;
+
+
+
+        viewModelJavaLangObjectNull = (viewModel) != (null);
+        if (viewModelJavaLangObjectNull) {
+
+
+
+            viewModel.addToCart(data);
+        }
+    }
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping

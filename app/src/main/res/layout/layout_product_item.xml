@@ -87,6 +87,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/soft_blue"
                     android:gravity="center"
+                    android:onClick="@{()->viewModel.addToCart(data)}"
                     android:layout_marginTop="@dimen/margin_10dp"
                     android:paddingVertical="@dimen/margin_10dp"
                     android:text="@string/add_to_cart"

@@ -14,6 +14,7 @@ class Constant {
         const val ON_START = "ON_START"
         const val ON_DATA_FAILURE = "ON_DATA_FAILURE"
         const val CART_COUNT = "CART_COUNT"
+        const val PREF_CART_LIST_DATA = "PREF_CART_LIST_DATA"
 
     }
 

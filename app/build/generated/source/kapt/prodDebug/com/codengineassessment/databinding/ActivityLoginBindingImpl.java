@@ -23,7 +23,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     private final android.widget.LinearLayout mboundView0;
     // variables
     @Nullable
-    private final android.view.View.OnClickListener mCallback2;
+    private final android.view.View.OnClickListener mCallback3;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -73,7 +73,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
         this.verifyNumber.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback2 = new com.codengineassessment.generated.callback.OnClickListener(this, 1);
+        mCallback3 = new com.codengineassessment.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -226,7 +226,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.pinview, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, pinviewandroidTextAttrChanged);
-            this.verifyNumber.setOnClickListener(mCallback2);
+            this.verifyNumber.setOnClickListener(mCallback3);
         }
         if ((dirtyFlags & 0xeL) != 0) {
             // api target 1

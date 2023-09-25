@@ -1,478 +1,350 @@
 [
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_layout_product_item.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/layout_product_item.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-anydpi-v33/ic_launcher.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_club_cheese_sandwich.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/club_cheese_sandwich.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_iced_caramel_macchiato.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/iced_caramel_macchiato.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_mcdouble.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/mcdouble.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_splash.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/splash.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_big_mac.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/big_mac.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_kurkure_masala_munch.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/kurkure_masala_munch.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_chocolate_truffle.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/chocolate_truffle.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_corn_grilled_sandwich.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/corn_grilled_sandwich.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_iced_mocha.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/iced_mocha.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_uncle_chips.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/uncle_chips.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_cheese_grilled_sandwich.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/cheese_grilled_sandwich.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_bira_gold_strong.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/bira_gold_strong.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_caramel_macchiato.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/caramel_macchiato.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_cupcake_dessert.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/cupcake_dessert.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_juice.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/juice.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_kingfisher_strong.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/kingfisher_strong.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_iced_mocha.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/iced_mocha.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_content_main.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/content_main.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_mcdouble.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/mcdouble.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_user2.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/user2.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_doritos_cheese.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/doritos_cheese.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_side_nav_bar.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/side_nav_bar.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_profile_placeholder.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_profile_placeholder.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_corn_grilled_sandwich.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/corn_grilled_sandwich.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_cheese_burger.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/cheese_burger.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_activity_splash.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/activity_splash.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_activity_login.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_back_arrow_black.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_back_arrow_black.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_fragment_transaction.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/fragment_transaction.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_cocktails.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/cocktails.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_premium_roast_coffee.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/premium_roast_coffee.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_kurkure_masala_munch.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/kurkure_masala_munch.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_user1.jpeg.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/user1.jpeg"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_sandwich.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/sandwich.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_layout_product_item.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/layout_product_item.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/anim_slide_in.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/anim/slide_in.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_beer.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/beer.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_americano.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/americano.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/navigation_dk_navigation.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/navigation/dk_navigation.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_cheese_grilled_sandwich.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/cheese_grilled_sandwich.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_juice.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/juice.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/xml_data_extraction_rules.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/anim_slide_out.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/anim/slide_out.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/anim_slide_out.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/anim/slide_out.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_doritos_cheese.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/doritos_cheese.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_americano.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/americano.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_image_placeholder_wrapper.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_image_placeholder_wrapper.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_activity_main.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_launcher_background.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_hamburger.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/hamburger.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_americano.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/americano.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_chips.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/chips.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_chocochips_oreo_cake.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/chocochips_oreo_cake.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_redvelvet_jar_cake.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/redvelvet_jar_cake.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_cheese_burger.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/cheese_burger.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_sandwich.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/sandwich.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_real_fruit_orange.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/real_fruit_orange.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_user2.jpeg.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/user2.jpeg"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-anydpi-v33/ic_launcher.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_double_quarter_pounder.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/double_quarter_pounder.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/xml_network_security_config.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/xml/network_security_config.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_multi_flavored_cupcakes.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/multi_flavored_cupcakes.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_magic_masala_chips.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/magic_masala_chips.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_paneer_club_sandwich.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/paneer_club_sandwich.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_bira_room.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/bira_room.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_hamburger.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/hamburger.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_side_nav_bar.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/side_nav_bar.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_big_mac.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/big_mac.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/xml_backup_rules.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_fragment_transaction.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/fragment_transaction.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_real_fruit_orange.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/real_fruit_orange.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_paneer_club_sandwich.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/paneer_club_sandwich.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_blue_bg_button.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/blue_bg_button.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_premium_roast_coffee.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/premium_roast_coffee.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_maaza_mango_drink.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/maaza_mango_drink.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_bira_room.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/bira_room.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_fragment_menu.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/fragment_menu.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_mocha_latte.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/mocha_latte.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_new_button_style_rounded.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/new_button_style_rounded.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_natural_mixed_fruit.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/natural_mixed_fruit.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_quarter_pounder_cheese.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/quarter_pounder_cheese.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/menu_activity_home_drawer.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/menu/activity_home_drawer.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_user1.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/user1.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_nav_item_color_state.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/nav_item_color_state.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_burger.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/burger.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_layout_category_item.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/layout_category_item.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_club_cheese_sandwich.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/club_cheese_sandwich.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_chips.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/chips.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_shopping_cart.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_shopping_cart.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_quarter_pounder_cheese.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/quarter_pounder_cheese.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_mocha_latte.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/mocha_latte.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_shopping_cart.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_shopping_cart.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_magic_masala_chips.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/magic_masala_chips.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_mocha_latte.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/mocha_latte.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_magic_masala_chips.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/magic_masala_chips.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_doritos_cheese.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/doritos_cheese.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_circle_cart_text.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/circle_cart_text.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_mcdouble.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/mcdouble.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_london_pilsner_strong.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/london_pilsner_strong.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_hamburger.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/hamburger.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_frooti_mango_drink.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/frooti_mango_drink.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_cheese_grilled_sandwich.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/cheese_grilled_sandwich.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_big_mac.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/big_mac.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_cheese_burger.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/cheese_burger.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_chocochips_oreo_cake.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/chocochips_oreo_cake.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_burger.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/burger.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_uncle_chips.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/uncle_chips.jpg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_fragment_menu.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/fragment_menu.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_club_cheese_sandwich.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/club_cheese_sandwich.jpg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_iced_mocha.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/iced_mocha.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_uncle_chips.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/uncle_chips.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_image_placeholder_wrapper.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_image_placeholder_wrapper.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_premium_roast_coffee.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/premium_roast_coffee.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_bira_gold_strong.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/bira_gold_strong.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_dialog_custum_progress.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/dialog_custum_progress.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_caramel_macchiato.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/caramel_macchiato.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/xml_backup_rules.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_real_fruit_orange.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/real_fruit_orange.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_profile_placeholder.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_profile_placeholder.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_splash.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/splash.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_frooti_mango_drink.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/frooti_mango_drink.jpg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_app_bar_home.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/app_bar_home.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_new_button_style_rounded.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/new_button_style_rounded.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_image_placeholder_50px.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_image_placeholder_50px.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_bira_room.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/bira_room.jpeg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_double_quarter_pounder.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/double_quarter_pounder.png"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_corn_grilled_sandwich.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/corn_grilled_sandwich.jpg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/menu_activity_home_drawer.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/menu/activity_home_drawer.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_ic_chevron_left.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/ic_chevron_left.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_circle_cart_text.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/circle_cart_text.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_nav_item_color_state.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/nav_item_color_state.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_double_quarter_pounder.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/double_quarter_pounder.jpeg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_blue_bg_button.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/blue_bg_button.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_maaza_mango_drink.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/maaza_mango_drink.jpg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_multi_flavored_cupcakes.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/multi_flavored_cupcakes.jpg"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_nav_header_home.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/nav_header_home.xml"
-    },
-    {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_natural_mixed_fruit.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/natural_mixed_fruit.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_kingfisher_strong.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/kingfisher_strong.png"
     },
     {
         "merged": "com.codengineassessment.app-merged_res-55:/layout_app_bar_home.xml.flat",
         "source": "com.codengineassessment.app-main-57:/layout/app_bar_home.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_london_pilsner_strong.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/london_pilsner_strong.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/anim_slide_in.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/anim/slide_in.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_london_pilsner_strong.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/london_pilsner_strong.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_nav_header_home.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/nav_header_home.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_chocolate_truffle.jpg.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/chocolate_truffle.jpg"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_frooti_mango_drink.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/frooti_mango_drink.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_beer.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/beer.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_activity_main.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/activity_main.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_chocochips_oreo_cake.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/chocochips_oreo_cake.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_coconut_water.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/coconut_water.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_content_main.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/content_main.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_coconut_water.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/coconut_water.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_iced_caramel_macchiato.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/iced_caramel_macchiato.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/xml_network_security_config.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/xml/network_security_config.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_dialog_custum_progress.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/dialog_custum_progress.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_activity_login.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/activity_login.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_cupcake_dessert.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/cupcake_dessert.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_natural_mixed_fruit.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/natural_mixed_fruit.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_caramel_macchiato.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/caramel_macchiato.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_iced_caramel_macchiato.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/iced_caramel_macchiato.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_redvelvet_jar_cake.jpg.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/redvelvet_jar_cake.jpg"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_kurkure_masala_munch.jpg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/kurkure_masala_munch.jpg"
+        "merged": "com.codengineassessment.app-merged_res-55:/layout_activity_splash.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/layout/activity_splash.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_bira_gold_strong.jpeg.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/bira_gold_strong.jpeg"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_multi_flavored_cupcakes.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/multi_flavored_cupcakes.png"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/layout_layout_category_item.xml.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/layout/layout_category_item.xml"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_back_arrow_black.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_back_arrow_black.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_maaza_mango_drink.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/maaza_mango_drink.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_cocktails.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/cocktails.xml"
     },
     {
-        "merged": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-merged_res-55:/drawable_kingfisher_strong.png.flat",
-        "source": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-main-57:/drawable/kingfisher_strong.png"
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_paneer_club_sandwich.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/paneer_club_sandwich.png"
+    },
+    {
+        "merged": "com.codengineassessment.app-merged_res-55:/navigation_dk_navigation.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/navigation/dk_navigation.xml"
+    },
+    {
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_chevron_left.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_chevron_left.xml"
+    },
+    {
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_ic_image_placeholder_50px.xml.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/ic_image_placeholder_50px.xml"
+    },
+    {
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_quarter_pounder_cheese.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/quarter_pounder_cheese.png"
+    },
+    {
+        "merged": "com.codengineassessment.app-merged_res-55:/drawable_coconut_water.png.flat",
+        "source": "com.codengineassessment.app-main-57:/drawable/coconut_water.png"
+    },
+    {
+        "merged": "com.codengineassessment.app-merged_res-55:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.codengineassessment.app-main-57:/mipmap-hdpi/ic_launcher.webp"
     }
 ]

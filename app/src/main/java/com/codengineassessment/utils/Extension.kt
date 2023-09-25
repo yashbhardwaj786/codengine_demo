@@ -70,7 +70,16 @@ fun loadJSONFromAsset(context: Context, fileName: String): String {
 }
 
 fun showCartCount(cartCount: TextView?, prefs: PreferenceProvider) {
-    val count = prefs.getLong(CART_COUNT, 0) ?: 0
+    var count = 0
+    val cartList = prefs.getCartJsonObject()
+    cartList?.let {
+        if (it.isNotEmpty()){
+            for (i in it.indices){
+                count = count.plus(it[i].quantity ?: 0)
+            }
+        }
+    }
+    println("hh yashal count $count")
     if (count > 0) {
         cartCount?.text = "$count"
         cartCount?.visibility = View.VISIBLE

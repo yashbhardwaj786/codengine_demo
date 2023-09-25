@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.codengineassessment.R
 import com.codengineassessment.common.BaseFragment
 import com.codengineassessment.common.BaseViewModel
+import com.codengineassessment.data.model.CartItemProduct
 import com.codengineassessment.data.model.Categories
 import com.codengineassessment.data.model.Food
 import com.codengineassessment.data.model.MenuResult
@@ -18,9 +19,11 @@ import com.codengineassessment.ui.activity.MainActivity
 import com.codengineassessment.ui.adapter.CategoryItemAdapter
 import com.codengineassessment.ui.adapter.ProductListItemAdapter
 import com.codengineassessment.ui.viewmodel.MenuViewModel
+import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.ADD_TO_CART_CLICKED
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.CATEGORY_CLICKED
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.ON_DATA_FETCH
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
+import com.codengineassessment.utils.showCartCount
 import org.kodein.di.generic.instance
 
 class MenuFragment : BaseFragment() {
@@ -60,6 +63,44 @@ class MenuFragment : BaseFragment() {
 
                 val adapter = binding.categoryList.adapter as CategoryItemAdapter
                 adapter.setNotifyDataChange()
+            }
+
+            ADD_TO_CART_CLICKED -> {
+                val foodData = data.arguments[0] as Food
+                val cartList = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
+                val cartItem = CartItemProduct()
+                cartList?.let {
+                    if(it.isEmpty()){
+                        cartItem.apply {
+                            foodId = foodData.foodId
+                            foodName = foodData.foodName
+                            foodImage = foodData.foodImage
+                            foodPrice = foodData.foodPrice
+                            quantity = 1
+                        }
+                        it.add(cartItem)
+                    }else {
+                        for(i in it.indices){
+                            if(it[i].foodId ==foodData.foodId){
+                                it[i].quantity = it[i].quantity?.plus(1)
+                                break
+                            }else {
+                                cartItem.apply {
+                                    foodId = foodData.foodId
+                                    foodName = foodData.foodName
+                                    foodImage = foodData.foodImage
+                                    foodPrice = foodData.foodPrice
+                                    quantity = 1
+                                }
+                                it.add(cartItem)
+                                break
+                            }
+                        }
+                    }
+                }
+                prefs.saveCartJsonObject(cartList)
+                showCartCount(mainActivity.cartCountHome, prefs)
+                println("hh yashal ${cartList.toString()}")
             }
         }
     }
@@ -106,11 +147,6 @@ class MenuFragment : BaseFragment() {
         if (binding.productList != null) {
             binding.productList.apply {
                 val gridLayoutManager = GridLayoutManager(context, 2)
-//                gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
-//                    override fun getSpanSize(position: Int): Int {
-//                        return if (position == 0) 2 else 1
-//                    }
-//                }
                 layoutManager = gridLayoutManager
                 adapter = ProductListItemAdapter(menuViewModel.productList, menuViewModel, prefs)
             }

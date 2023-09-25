@@ -1,38 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/yashbhardwaj/.gradle/daemon/7.5/com.codengineassessment.app-mergeProdDebugResources-53:/values-xxxhdpi-v4/values-xxxhdpi-v4.xml",
-            "map": [
-                {
-                    "source": "/Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/main/res/values-xxxhdpi/dimens.xml",
-                    "from": {
-                        "startLines": "6,17,16,7,10,11,12,13,8,14,15,9,23,19,20,21,22",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "97,563,524,143,266,309,352,395,184,438,481,225,794,610,656,702,748",
-                        "endColumns": "45,45,38,40,42,42,42,42,40,42,42,40,49,45,45,45,45",
-                        "endOffsets": "138,604,558,179,304,347,390,433,220,476,519,261,839,651,697,743,789"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,101,147,186,227,270,313,356,399,440,483,526,567,617,663,709,755",
-                        "endColumns": "45,45,38,40,42,42,42,42,40,42,42,40,49,45,45,45,45",
-                        "endOffsets": "96,142,181,222,265,308,351,394,435,478,521,562,612,658,704,750,796"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "com.codengineassessment.app-mergeProdDebugResources-53:/values-xxxhdpi-v4/values-xxxhdpi-v4.xml",
             "map": [
                 {
                     "source": "/Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/main/res/values-xxxhdpi/dimens.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,9,-1,-1,-1,20,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,4,-1,-1,-1,4,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,225,-1,-1,-1,651,-1,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,40,-1,-1,-1,45,-1,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,261,-1,-1,-1,692,-1,-1,-1,-1"
+                        "startLines": "6,18,17,7,11,12,13,14,8,15,9,16,10,25,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "97,604,565,143,307,350,393,436,184,479,225,522,266,881,651,697,743,789,835",
+                        "endColumns": "45,45,38,40,42,42,42,42,40,42,40,42,40,49,45,45,45,45,45",
+                        "endOffsets": "138,645,599,179,345,388,431,474,220,517,261,560,302,926,692,738,784,830,876"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
