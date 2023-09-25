@@ -82,21 +82,29 @@ class MenuFragment : BaseFragment() {
                         }
                         it.add(cartItem)
                     }else {
+                        var pos = 0
+                        var isSameItemAvailable = false
                         for(i in it.indices){
                             if(it[i].foodId ==foodData.foodId){
-                                it[i].quantity = it[i].quantity?.plus(1)
+                                pos = i
+                                isSameItemAvailable = true
                                 break
                             }else {
-                                cartItem.apply {
-                                    foodId = foodData.foodId
-                                    foodName = foodData.foodName
-                                    foodImage = foodData.foodImage
-                                    foodPrice = foodData.foodPrice
-                                    quantity = 1
-                                }
-                                it.add(cartItem)
-                                break
+                                isSameItemAvailable = false
+//                                break
                             }
+                        }
+                        if(isSameItemAvailable){
+                            it[pos].quantity = it[pos].quantity?.plus(1)
+                        }else {
+                            cartItem.apply {
+                                foodId = foodData.foodId
+                                foodName = foodData.foodName
+                                foodImage = foodData.foodImage
+                                foodPrice = foodData.foodPrice
+                                quantity = 1
+                            }
+                            it.add(cartItem)
                         }
                     }
                 }
