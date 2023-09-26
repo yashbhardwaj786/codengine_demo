@@ -47,7 +47,7 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContrac
     private val binding get() = _binding!!
     private var roundOffTotal = ""
     private val cartViewModel: CartViewModel by viewModels {
-        CartViewModelFactory((this.application as CodengineAssessment).repository, prefs)
+        CartViewModelFactory((this.application as CodengineAssessment).repository)
     }
 
     private fun updateCart(cartItemProduct: CartItemProduct, position: Int){

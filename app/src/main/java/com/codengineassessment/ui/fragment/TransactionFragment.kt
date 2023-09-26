@@ -72,7 +72,7 @@ class TransactionFragment : Fragment(), KodeinAware {
 
     override fun onResume() {
         super.onResume()
-        mainActivity.setToolBar(getString(R.string.transaction))
+        mainActivity.setToolBar(getString(R.string.transaction), showCartIcon = false)
 
     }
 
