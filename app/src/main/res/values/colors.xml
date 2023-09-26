@@ -28,5 +28,8 @@
     <color name="cart_shadow">@color/screen_bg_off_white_color</color>
     <color name="coral">#eb5757</color>
     <color name="black_with_20">#33000000</color>
+    <color name="dusk_blue_two_20">#33254078</color>
     <color name="start_color_bg_gradient">@color/screen_bg_off_white_color</color>
+    <color name="address_submit_disable_bg">@color/dusk_blue_two_20</color>
+    <color name="standard_button_text_color">@color/white</color>
 </resources>

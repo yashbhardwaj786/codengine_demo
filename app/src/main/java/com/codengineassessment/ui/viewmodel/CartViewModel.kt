@@ -20,6 +20,7 @@ class CartViewModel(
     private val prefs: PreferenceProvider
 ): BaseViewModel() {
     var isCartEmpty = ObservableField(false)
+
     var cartItemProductList = ArrayList<CartItemProduct>()
     val allWords: LiveData<List<TransactionData>> = repository.allUsers(prefs).asLiveData()
 

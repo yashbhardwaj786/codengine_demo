@@ -14,6 +14,7 @@ import com.codengineassessment.repository.CartRepository
 import com.codengineassessment.ui.viewmodelfactory.CartViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
+import com.codengineassessment.ui.viewmodelfactory.ToGoViewModelFactory
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
@@ -54,6 +55,7 @@ class CodengineAssessment :
         bind() from provider { MenuRepository() }
         bind() from provider { MainViewModelFactory() }
         bind() from provider { LoginViewModelFactory() }
+        bind() from provider { ToGoViewModelFactory() }
         bind() from provider { MenuViewModelFactory(instance()) }
     }
 

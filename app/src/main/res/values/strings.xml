@@ -21,6 +21,7 @@
     <string name="category_name">Burger</string>
     <string name="food_name">Cheese Grilled Sandwich</string>
     <string name="add_to_cart">Add Item</string>
+    <string name="submit">Submit</string>
     <string name="food_quantity">1</string>
     <string name="food_price">$ 50.10</string>
     <string name="logout_message">Are you sure, you want to logout?</string>
@@ -32,5 +33,13 @@
     <string name="subtotal">Subtotal</string>
     <string name="tax">Tax</string>
     <string name="total">Total</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="enter_email">Enter Email address</string>
+    <string name="enter_phone">Enter Mobile Number</string>
+    <string name="first_name_empty">First Name should not empty</string>
+    <string name="mobile_number_empty">Mobile Number should not empty</string>
+    <string name="email_empty">Email Address should not empty</string>
+
 
 </resources>

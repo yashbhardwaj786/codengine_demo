@@ -27,6 +27,10 @@ import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
 import androidx.lifecycle.Observer
 import com.codengineassessment.data.db.TransactionData
+import com.codengineassessment.data.model.Food
+import com.codengineassessment.ui.bottomsheet.ProductDescriptionDialogFragment
+import com.codengineassessment.ui.bottomsheet.ToGoContract
+import com.codengineassessment.ui.bottomsheet.ToGoDialogFragment
 import com.codengineassessment.utils.Constant.Companion.MANAGER_USER_ID
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_ID
 import com.codengineassessment.utils.Constant.Companion.SUCCESSFULLY_PURCHASE
@@ -38,8 +42,9 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import org.parceler.Parcels
 
-class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
+class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContract {
     override val kodein by kodein()
     private lateinit var cartCountHome: TextView
     private val prefs: PreferenceProvider by instance()
@@ -108,32 +113,18 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
         binding.isManager = userType == Constant.MANAGER_TYPE
 
         binding.confirmPay.setOnClickListener {
-            val transactionInfo = TransactionData(
-                firstName = "Guest",
-                userId = prefs.getData(Constant.PREF_USER_ID) ?: "101",
-                lastName =  "Member",
-                mobile = "",
-                email = "",
-                quantity =  getCartCount(prefs),
-                price = roundOffTotal.toDouble(),
-                time = getCurrentTime(),
-            )
-            cartViewModel.confirmAndPayDBCall(transactionInfo)
-            showToast(this, SUCCESSFULLY_PURCHASE)
-            CoroutineScope(Dispatchers.IO).launch{
-                delay(2000)
-                val list = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
-                list.clear()
-                prefs.saveCartJsonObject(list)
-                finish()
-            }
+            saveDataToDB("Guest", "", "", "")
         }
         findViewById<Button>(R.id.continueShopping).setOnClickListener {
             finish()
         }
         // TODO Remove here and add on Transaction page
         cartViewModel.allWords?.observe(this, Observer {
+            println("hh yashal list $it")
         })
+        binding.toGo.setOnClickListener {
+            openToGoBottomSheet()
+        }
     }
 
     private fun initRecyclerView() {
@@ -179,5 +170,38 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
         adapter.setNotifyDataChange()
         data.quantity = data.quantity?.minus(1)
         updateCart(data, position)
+    }
+
+    private fun openToGoBottomSheet() {
+        val dialogFragment = ToGoDialogFragment.newInstance(this)
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        dialogFragment.isCancelable = true
+        dialogFragment.show(fragmentTransaction, "TO GO")
+    }
+
+    override fun submitData(firstName: String, lastName: String, email: String, mobile: String) {
+        saveDataToDB(firstName, lastName, email, mobile)
+    }
+
+    private fun saveDataToDB(firstName: String, lastName: String, email: String, mobile: String){
+        val transactionInfo = TransactionData(
+            firstName = firstName,
+            userId = prefs.getData(Constant.PREF_USER_ID) ?: "101",
+            lastName =  lastName,
+            mobile = mobile,
+            email = email,
+            quantity =  getCartCount(prefs),
+            price = roundOffTotal.toDouble(),
+            time = getCurrentTime(),
+        )
+        cartViewModel.confirmAndPayDBCall(transactionInfo)
+        showToast(this, SUCCESSFULLY_PURCHASE)
+        CoroutineScope(Dispatchers.IO).launch{
+            delay(2000)
+            val list = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
+            list.clear()
+            prefs.saveCartJsonObject(list)
+            finish()
+        }
     }
 }
