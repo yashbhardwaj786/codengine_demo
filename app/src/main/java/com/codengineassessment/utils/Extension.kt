@@ -9,17 +9,16 @@ import android.util.DisplayMetrics
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import com.bumptech.glide.Glide
 import com.codengineassessment.R
 import com.codengineassessment.data.preferences.PreferenceProvider
-import com.codengineassessment.utils.Constant.Companion.CART_COUNT
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import java.io.IOException
+import java.text.SimpleDateFormat
+import java.util.Calendar
 
 fun isInternetAvailable(ctx: Context): Boolean {
     var result = false
@@ -93,6 +92,18 @@ fun showCartCount(cartCount: TextView?, prefs: PreferenceProvider) {
         cartCount?.visibility = View.GONE
     }
 }
+fun getCartCount(prefs: PreferenceProvider): Int {
+    var count = 0
+    val cartList = prefs.getCartJsonObject()
+    cartList?.let {
+        if (it.isNotEmpty()){
+            for (i in it.indices){
+                count = count.plus(it[i].quantity ?: 0)
+            }
+        }
+    }
+    return count
+}
 fun setupFullHeight(bottomSheetDialog: BottomSheetDialog, context: Context) {
     val bottomSheet: CoordinatorLayout =
         bottomSheetDialog.findViewById<View>(R.id.rootLayout) as CoordinatorLayout
@@ -112,4 +123,13 @@ fun getWindowHeight(context: Context): Int {
     val displayMetrics = DisplayMetrics()
     (context as Activity).windowManager.defaultDisplay.getMetrics(displayMetrics)
     return displayMetrics.heightPixels
+}
+fun getCurrentTimestamp(): Long {
+    return System.currentTimeMillis()
+}
+
+fun getCurrentTime(): String {
+    val time = Calendar.getInstance().time
+    val formatter = SimpleDateFormat("HH:mm a")
+    return formatter.format(time)
 }

@@ -26,6 +26,18 @@ import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
 import androidx.lifecycle.Observer
+import com.codengineassessment.data.db.TransactionData
+import com.codengineassessment.utils.Constant.Companion.MANAGER_USER_ID
+import com.codengineassessment.utils.Constant.Companion.PREF_USER_ID
+import com.codengineassessment.utils.Constant.Companion.SUCCESSFULLY_PURCHASE
+import com.codengineassessment.utils.getCartCount
+import com.codengineassessment.utils.getCurrentTime
+import com.codengineassessment.utils.getCurrentTimestamp
+import com.codengineassessment.utils.showToast
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
     override val kodein by kodein()
@@ -33,8 +45,9 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
     private val prefs: PreferenceProvider by instance()
     private var _binding: ActivityCartBinding? = null
     private val binding get() = _binding!!
+    private var roundOffTotal = ""
     private val cartViewModel: CartViewModel by viewModels {
-        CartViewModelFactory((this.application as CodengineAssessment).repository)
+        CartViewModelFactory((this.application as CodengineAssessment).repository, prefs)
     }
 
     private fun updateCart(cartItemProduct: CartItemProduct, position: Int){
@@ -95,16 +108,31 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
         binding.isManager = userType == Constant.MANAGER_TYPE
 
         binding.confirmPay.setOnClickListener {
-            cartViewModel.confirmAndPayDBCall()
-        }
-        binding.confirmPay.setOnClickListener {
-
+            val transactionInfo = TransactionData(
+                firstName = "Guest",
+                userId = prefs.getData(Constant.PREF_USER_ID) ?: "101",
+                lastName =  "Member",
+                mobile = "",
+                email = "",
+                quantity =  getCartCount(prefs),
+                price = roundOffTotal.toDouble(),
+                time = getCurrentTime(),
+            )
+            cartViewModel.confirmAndPayDBCall(transactionInfo)
+            showToast(this, SUCCESSFULLY_PURCHASE)
+            CoroutineScope(Dispatchers.IO).launch{
+                delay(2000)
+                val list = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
+                list.clear()
+                prefs.saveCartJsonObject(list)
+                finish()
+            }
         }
         findViewById<Button>(R.id.continueShopping).setOnClickListener {
             finish()
         }
+        // TODO Remove here and add on Transaction page
         cartViewModel.allWords?.observe(this, Observer {
-            println("hh yashal list $it")
         })
     }
 
@@ -132,7 +160,7 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
             total = subTotal + tax
             val roundOffTax = String.format("%.2f", tax)
             val roundOffSubTotal = String.format("%.2f", subTotal)
-            val roundOffTotal = String.format("%.2f", total)
+            roundOffTotal = String.format("%.2f", total)
             binding.subtotalAmount = roundOffSubTotal
             binding.taxValueAmount = roundOffTax
             binding.totalAmount = roundOffTotal

@@ -33,7 +33,7 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [TransactionData::class],
-    version = 1,
+    version = 4,
     exportSchema = false
 )
 abstract class TransactionDataBase : RoomDatabase() {
