@@ -20,7 +20,7 @@
     <string name="transaction">Transaction</string>
     <string name="category_name">Burger</string>
     <string name="food_name">Cheese Grilled Sandwich</string>
-    <string name="add_to_cart">Add to cart</string>
+    <string name="add_to_cart">Add Item</string>
     <string name="food_quantity">1</string>
     <string name="food_price">$ 50.10</string>
     <string name="logout_message">Are you sure, you want to logout?</string>

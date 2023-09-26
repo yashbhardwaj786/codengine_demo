@@ -27,4 +27,6 @@
     <color name="screen_bg_off_white_color">#FBFBFB</color>
     <color name="cart_shadow">@color/screen_bg_off_white_color</color>
     <color name="coral">#eb5757</color>
+    <color name="black_with_20">#33000000</color>
+    <color name="start_color_bg_gradient">@color/screen_bg_off_white_color</color>
 </resources>

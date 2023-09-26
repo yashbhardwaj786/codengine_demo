@@ -18,17 +18,23 @@ import com.codengineassessment.notifiers.Notify
 import com.codengineassessment.ui.activity.MainActivity
 import com.codengineassessment.ui.adapter.CategoryItemAdapter
 import com.codengineassessment.ui.adapter.ProductListItemAdapter
+import com.codengineassessment.ui.bottomsheet.AddToCartContract
+import com.codengineassessment.ui.bottomsheet.ProductDescriptionDialogFragment
 import com.codengineassessment.ui.viewmodel.MenuViewModel
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.ADD_TO_CART_CLICKED
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.CATEGORY_CLICKED
 import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.ON_DATA_FETCH
+import com.codengineassessment.ui.viewmodel.MenuViewModel.Companion.PRODUCT_CARD_CLICKED
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
+import com.codengineassessment.utils.Constant
 import com.codengineassessment.utils.Constant.Companion.CART_ITEM_ADDED
 import com.codengineassessment.utils.showCartCount
 import com.codengineassessment.utils.showToast
 import org.kodein.di.generic.instance
+import org.kodein.di.newInstance
+import org.parceler.Parcels
 
-class MenuFragment : BaseFragment() {
+class MenuFragment : BaseFragment(), AddToCartContract {
     private lateinit var mainActivity: MainActivity
     private val factory by instance<MenuViewModelFactory>()
     private val prefs by instance<PreferenceProvider>()
@@ -65,6 +71,10 @@ class MenuFragment : BaseFragment() {
 
                 val adapter = binding.categoryList.adapter as CategoryItemAdapter
                 adapter.setNotifyDataChange()
+            }
+            PRODUCT_CARD_CLICKED -> {
+                val foodData = data.arguments[0] as Food
+                openProductDescriptionBottomSheet(foodData)
             }
 
             ADD_TO_CART_CLICKED -> {
@@ -140,8 +150,6 @@ class MenuFragment : BaseFragment() {
                 menuViewModel.productList = it
                 initProductRecyclerView()
             }
-
-
         }
 
         menuViewModel.categoryList = categoryProductsList
@@ -161,5 +169,20 @@ class MenuFragment : BaseFragment() {
                 adapter = ProductListItemAdapter(menuViewModel.productList, menuViewModel, prefs)
             }
         }
+    }
+
+    private fun openProductDescriptionBottomSheet(data: Food) {
+        val dialogFragment = ProductDescriptionDialogFragment()
+        val args = Bundle()
+        args.putParcelable(Constant.BOTTOM_DATA, Parcels.wrap(data))
+        dialogFragment.arguments = args
+        val fragmentTransaction = this.childFragmentManager.beginTransaction()
+        dialogFragment.isCancelable = true
+        dialogFragment.setAddToCartContractListener(this)
+        dialogFragment.show(fragmentTransaction, "SUBMIT REVIEW NOTIFICATION")
+    }
+
+    override fun updateCartValue() {
+        showCartCount(mainActivity.cartCountHome, prefs)
     }
 }

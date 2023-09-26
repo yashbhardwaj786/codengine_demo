@@ -30,6 +30,7 @@
             app:cardBackgroundColor="@color/bg_style_solid_color"
             app:cardCornerRadius="@dimen/margin_12dp"
             app:cardElevation="@dimen/margin_0dp"
+            android:onClick="@{()->viewModel.productClick(data)}"
             app:cardUseCompatPadding="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"

@@ -1,17 +1,24 @@
 package com.codengineassessment.utils
 
+import android.app.Activity
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
+import android.util.DisplayMetrics
 import android.view.View
+import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.bumptech.glide.Glide
+import com.codengineassessment.R
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.utils.Constant.Companion.CART_COUNT
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import java.io.IOException
 
 fun isInternetAvailable(ctx: Context): Boolean {
@@ -85,4 +92,24 @@ fun showCartCount(cartCount: TextView?, prefs: PreferenceProvider) {
     } else {
         cartCount?.visibility = View.GONE
     }
+}
+fun setupFullHeight(bottomSheetDialog: BottomSheetDialog, context: Context) {
+    val bottomSheet: CoordinatorLayout =
+        bottomSheetDialog.findViewById<View>(R.id.rootLayout) as CoordinatorLayout
+    val behavior: BottomSheetBehavior<*> = BottomSheetBehavior.from(
+        bottomSheet
+    )
+    val layoutParams: ViewGroup.LayoutParams = bottomSheet.layoutParams
+    val windowHeight = getWindowHeight(context)
+    if (layoutParams != null) {
+        layoutParams.height = windowHeight
+    }
+    bottomSheet.layoutParams = layoutParams
+    behavior.state = BottomSheetBehavior.STATE_EXPANDED
+}
+fun getWindowHeight(context: Context): Int {
+    // Calculate window height for fullscreen use
+    val displayMetrics = DisplayMetrics()
+    (context as Activity).windowManager.defaultDisplay.getMetrics(displayMetrics)
+    return displayMetrics.heightPixels
 }

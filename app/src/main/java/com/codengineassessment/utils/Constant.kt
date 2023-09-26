@@ -30,6 +30,7 @@ class Constant {
         const val SERVER_TYPE = "Server"
         const val SERVER_USER_ID = "102"
         const val CART_ITEM_ADDED = "Item Added to cart successfully"
+        const val BOTTOM_DATA = "BOTTOM_DATA"
 
     }
 

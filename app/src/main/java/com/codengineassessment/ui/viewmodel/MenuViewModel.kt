@@ -60,10 +60,15 @@ class MenuViewModel(
         notifier.notify(Notify(ADD_TO_CART_CLICKED, data))
     }
 
+    fun productClick(data: Food){
+        notifier.notify(Notify(PRODUCT_CARD_CLICKED, data))
+    }
+
     companion object {
         const val ON_DATA_FETCH = "ON_DATA_FETCH"
         const val CATEGORY_CLICKED = "CATEGORY_CLICKED"
         const val ADD_TO_CART_CLICKED = "ADD_TO_CART_CLICKED"
+        const val PRODUCT_CARD_CLICKED = "PRODUCT_CARD_CLICKED"
     }
 
 }
