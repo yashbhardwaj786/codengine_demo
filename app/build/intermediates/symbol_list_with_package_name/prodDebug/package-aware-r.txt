@@ -1434,6 +1434,8 @@ color bg_style_solid_color
 color black
 color black_2b
 color black_5
+color black_50
+color black_with_20
 color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -2167,6 +2169,7 @@ color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
 color soft_blue
+color start_color_bg_gradient
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -2725,6 +2728,7 @@ dimen margin_10dp
 dimen margin_12dp
 dimen margin_15dp
 dimen margin_20dp
+dimen margin_33dp
 dimen margin_3dp
 dimen margin_40dp
 dimen margin_4dp
@@ -3082,10 +3086,16 @@ drawable abc_vector_test
 drawable americano
 drawable avd_hide_password
 drawable avd_show_password
+drawable banner
+drawable baseline_add_circle_24
+drawable baseline_close_24
+drawable baseline_do_disturb_on_24
 drawable beer
+drawable bg_bottom_sheet_round_top
 drawable big_mac
 drawable bira_gold_strong
 drawable bira_room
+drawable black_rectangle_with_4dp
 drawable blue_bg_button
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3096,6 +3106,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable burger
+drawable button_style
 drawable caramel_macchiato
 drawable cheese_burger
 drawable cheese_grilled_sandwich
@@ -3118,6 +3129,7 @@ drawable double_quarter_pounder
 drawable frooti_mango_drink
 drawable hamburger
 drawable ic_arrow_back_black_24
+drawable ic_arrow_left_square
 drawable ic_back_arrow_black
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3128,6 +3140,7 @@ drawable ic_call_decline_low
 drawable ic_chevron_left
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_empty_cart
 drawable ic_image_placeholder_50px
 drawable ic_image_placeholder_wrapper
 drawable ic_keyboard_black_24dp
@@ -3244,6 +3257,7 @@ drawable tooltip_frame_light
 drawable uncle_chips
 drawable user1
 drawable user2
+drawable view_style
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3325,6 +3339,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appbar
 id arc
 id asConfigured
 id async
@@ -3333,6 +3348,9 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id back
+id backIconLayout
+id bannerImage
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3340,6 +3358,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomLayout
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3351,6 +3370,7 @@ id cancel_button
 id carryVelocity
 id cart
 id cartCount
+id cartImage
 id cartLayout
 id categoryList
 id center
@@ -3369,15 +3389,18 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id close
 id closest
 id collapseActionView
 id compress
+id confirmPay
 id confirm_button
 id constraint
 id container
 id content
 id contentPanel
 id contiguous
+id continueShopping
 id continuousVelocity
 id coordinator
 id cos
@@ -3392,6 +3415,7 @@ id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
+id decrease
 id default_activity_button
 id deltaRelative
 id dependency_ordering
@@ -3484,6 +3508,7 @@ id imageView2
 id imageView3
 id immediateStop
 id included
+id increase
 id indeterminate
 id info
 id invisible
@@ -3537,6 +3562,7 @@ id menuFragment
 id message
 id middle
 id mini
+id minus
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3625,6 +3651,7 @@ id peekHeight
 id percent
 id pin
 id pinview
+id plus
 id position
 id postLayout
 id pressed
@@ -3647,6 +3674,7 @@ id rightToLeft
 id right_icon
 id right_side
 id role
+id rootLayout
 id rounded
 id row_index_key
 id rtl
@@ -3674,6 +3702,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id separator
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3712,8 +3741,10 @@ id staticLayout
 id staticPostLayout
 id stop
 id stretch
+id subTotalValue
 id submenuarrow
 id submit_area
+id subtotal
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3729,6 +3760,8 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id tax
+id taxValue
 id text
 id text2
 id textEnd
@@ -3754,10 +3787,14 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toGo
 id toggle
 id toolbar
 id top
 id topPanel
+id topView
+id total
+id totalValue
 id touch_outside
 id transactionFragment
 id transitionToEnd
@@ -3907,6 +3944,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cart
 layout activity_login
 layout activity_main
 layout activity_splash
@@ -3929,10 +3967,13 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_custum_progress
+layout dialog_layout_product_description
+layout empty_checkout_screen
 layout fragment_menu
 layout fragment_transaction
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout layout_cart_item
 layout layout_category_item
 layout layout_product_item
 layout m3_alert_dialog
@@ -4050,9 +4091,11 @@ string category_name
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
+string checkout
 string clear_dogs
 string clear_text_end_icon_content_description
 string close_drawer
+string confirm_pay
 string dest_title
 string enter_pin
 string error_a11y_label
@@ -4109,6 +4152,7 @@ string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
 string menu
+string missing_cart_items
 string mtrl_badge_numberless_content_description
 string mtrl_checkbox_button_icon_path_checked
 string mtrl_checkbox_button_icon_path_group_name
@@ -4188,7 +4232,13 @@ string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string start_shopping
+string start_your_journey
 string status_bar_notification_info_overflow
+string subtotal
+string tax
+string togo
+string total
 string transaction
 string user_name_demo
 string user_role_demo
@@ -4941,6 +4991,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style TransParentBottomSheetDialog
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

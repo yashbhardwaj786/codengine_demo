@@ -1,82 +1,47 @@
 package com.codengineassessment.ui.activity
 
-import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.TextUtils
+import android.view.View
+import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.lifecycle.ViewModelProvider
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.codengineassessment.CodengineAssessment
 import com.codengineassessment.R
-import com.codengineassessment.common.BaseActivity
-import com.codengineassessment.common.BaseViewModel
 import com.codengineassessment.data.model.CartItemProduct
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.databinding.ActivityCartBinding
-import com.codengineassessment.notifiers.Notify
 import com.codengineassessment.ui.adapter.CartListItemAdapter
-import com.codengineassessment.ui.adapter.CategoryItemAdapter
+import com.codengineassessment.ui.viewmodel.CartContract
 import com.codengineassessment.ui.viewmodel.CartViewModel
-import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.CONTINUE_SHOPPING_CLICKED
-import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.DECREASE_QUANTITY
-import com.codengineassessment.ui.viewmodel.CartViewModel.Companion.INCREASE_QUANTITY
 import com.codengineassessment.ui.viewmodelfactory.CartViewModelFactory
 import com.codengineassessment.utils.Constant
 import com.codengineassessment.utils.showCartCount
+import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
+import androidx.lifecycle.Observer
 
-class CartActivity : BaseActivity() {
+class CartActivity : AppCompatActivity(), CartContract, KodeinAware {
     override val kodein by kodein()
-    private lateinit var cartViewModel: CartViewModel
-    private val factory by instance<CartViewModelFactory>()
-    private val binding: ActivityCartBinding by lazyBinding()
-    override val dataBinding: Boolean = true
-    override val layoutResource: Int = R.layout.activity_cart
-    private val prefs: PreferenceProvider by instance()
     private lateinit var cartCountHome: TextView
-
-    override fun getViewModel(): BaseViewModel {
-        return cartViewModel
-    }
-
-    override fun initializeViewModel() {
-        cartViewModel =
-            ViewModelProvider(this, factory)[CartViewModel::class.java]
-    }
-
-    override fun setBindings() {
-        binding.viewModel = cartViewModel
-    }
-
-    @SuppressLint("NotifyDataSetChanged")
-    override fun onNotificationReceived(data: Notify) {
-        when (data.identifier) {
-            CONTINUE_SHOPPING_CLICKED -> {
-                finish()
-            }
-            INCREASE_QUANTITY -> {
-                val cartItemProduct = data.arguments[0] as CartItemProduct
-                val position = data.arguments[1] as Int
-                cartItemProduct.quantity = cartItemProduct.quantity?.plus(1)
-                val adapter = binding.productList.adapter as CartListItemAdapter
-                adapter.setNotifyDataChange()
-                updateCart(cartItemProduct, position)
-            }
-            DECREASE_QUANTITY -> {
-                val cartItemProduct = data.arguments[0] as CartItemProduct
-                val position = data.arguments[1] as Int
-                val adapter = binding.productList.adapter as CartListItemAdapter
-                adapter.setNotifyDataChange()
-                cartItemProduct.quantity = cartItemProduct.quantity?.minus(1)
-                updateCart(cartItemProduct, position)
-            }
-        }
+    private val prefs: PreferenceProvider by instance()
+    private var _binding: ActivityCartBinding? = null
+    private val binding get() = _binding!!
+    private val cartViewModel: CartViewModel by viewModels {
+        CartViewModelFactory((this.application as CodengineAssessment).repository)
     }
 
     private fun updateCart(cartItemProduct: CartItemProduct, position: Int){
         val cartList = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
         if(cartItemProduct.quantity == 0){
             cartList.removeAt(position)
-            val adapter = binding.productList.adapter as CartListItemAdapter
+            val adapter = binding?.productList?.adapter as CartListItemAdapter
             adapter.cartItemList = cartList
             adapter.setNotifyDataChange()
         }else {
@@ -90,9 +55,31 @@ class CartActivity : BaseActivity() {
         }
     }
 
+    private fun setToolBar(titleText: String, showBackButton: Boolean = false) {
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        val title = findViewById<TextView>(R.id.title)
+        title?.text = titleText
+        title?.maxLines = 1
+        title?.ellipsize = TextUtils.TruncateAt.END
+        toolbar?.contentInsetStartWithNavigation = 0
+        setSupportActionBar(toolbar)
+        val backIconLayout = findViewById<LinearLayout>(R.id.backIconLayout)
+        if(showBackButton){
+            backIconLayout.visibility = View.VISIBLE
+        }else {
+            backIconLayout.visibility = View.INVISIBLE
+        }
+
+        backIconLayout.setOnClickListener {
+            finish()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        _binding = DataBindingUtil.setContentView(this, R.layout.activity_cart)
         setToolBar(getString(R.string.checkout), true)
+        binding.viewModel = cartViewModel
         cartCountHome = findViewById<TextView>(R.id.cartCount)
         showCartCount(cartCountHome, prefs)
         val cartItemProduct = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
@@ -106,6 +93,19 @@ class CartActivity : BaseActivity() {
         }
         val userType = prefs.getData(Constant.PREF_USER_TYPE)
         binding.isManager = userType == Constant.MANAGER_TYPE
+
+        binding.confirmPay.setOnClickListener {
+            cartViewModel.confirmAndPayDBCall()
+        }
+        binding.confirmPay.setOnClickListener {
+
+        }
+        findViewById<Button>(R.id.continueShopping).setOnClickListener {
+            finish()
+        }
+        cartViewModel.allWords?.observe(this, Observer {
+            println("hh yashal list $it")
+        })
     }
 
     private fun initRecyclerView() {
@@ -114,7 +114,7 @@ class CartActivity : BaseActivity() {
             layoutManager =
                 LinearLayoutManager(context)
             adapter =
-                CartListItemAdapter(cartViewModel, cartViewModel.cartItemProductList, prefs)
+                CartListItemAdapter(cartViewModel, cartViewModel.cartItemProductList, this@CartActivity, prefs)
         }
     }
 
@@ -137,5 +137,19 @@ class CartActivity : BaseActivity() {
             binding.taxValueAmount = roundOffTax
             binding.totalAmount = roundOffTotal
         }
+    }
+
+    override fun increaseQuantity(data: CartItemProduct, position: Int) {
+        data.quantity = data.quantity?.plus(1)
+        val adapter = binding.productList.adapter as CartListItemAdapter
+        adapter.setNotifyDataChange()
+        updateCart(data, position)
+    }
+
+    override fun decreaseQuantity(data: CartItemProduct, position: Int) {
+        val adapter = binding.productList.adapter as CartListItemAdapter
+        adapter.setNotifyDataChange()
+        data.quantity = data.quantity?.minus(1)
+        updateCart(data, position)
     }
 }

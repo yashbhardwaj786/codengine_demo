@@ -1,60 +1,64 @@
 com.codengineassessment.app-jetified-emoji2-1.2.0-0 /Users/yashbhardwaj/.gradle/caches/transforms-3/06b9eac1f48ae0da929504bdaf7c99c6/transformed/jetified-emoji2-1.2.0/res
 com.codengineassessment.app-jetified-core-ktx-1.12.0-1 /Users/yashbhardwaj/.gradle/caches/transforms-3/071c4bc6eee9140931fa95f81aa654ad/transformed/jetified-core-ktx-1.12.0/res
 com.codengineassessment.app-lifecycle-viewmodel-2.6.2-2 /Users/yashbhardwaj/.gradle/caches/transforms-3/0aa671868b22fa806389fe86a1c9f6fd/transformed/lifecycle-viewmodel-2.6.2/res
-com.codengineassessment.app-cardview-1.0.0-3 /Users/yashbhardwaj/.gradle/caches/transforms-3/0df8249ada1a8674390a3a0dc6b66446/transformed/cardview-1.0.0/res
-com.codengineassessment.app-navigation-ui-2.7.3-4 /Users/yashbhardwaj/.gradle/caches/transforms-3/11e11589e9d4645e434fa481e4a8354d/transformed/navigation-ui-2.7.3/res
-com.codengineassessment.app-jetified-pinview-1.4.4-5 /Users/yashbhardwaj/.gradle/caches/transforms-3/165a445cf392e386b5846640b465cec7/transformed/jetified-pinview-1.4.4/res
-com.codengineassessment.app-lifecycle-livedata-2.6.2-6 /Users/yashbhardwaj/.gradle/caches/transforms-3/17699808bd1139cae4153b93b9264579/transformed/lifecycle-livedata-2.6.2/res
-com.codengineassessment.app-jetified-lifecycle-viewmodel-ktx-2.6.2-7 /Users/yashbhardwaj/.gradle/caches/transforms-3/1d305f70c9a3d69be5b349f149b9145d/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/res
-com.codengineassessment.app-material-1.11.0-alpha03-8 /Users/yashbhardwaj/.gradle/caches/transforms-3/1e9534c51d557574500c1ba864880b0c/transformed/material-1.11.0-alpha03/res
-com.codengineassessment.app-appcompat-1.6.1-9 /Users/yashbhardwaj/.gradle/caches/transforms-3/2d723b179f4af2930cf57d0a31215867/transformed/appcompat-1.6.1/res
-com.codengineassessment.app-jetified-viewpager2-1.0.0-10 /Users/yashbhardwaj/.gradle/caches/transforms-3/325162eb8f49ec436f62c7c767ca337b/transformed/jetified-viewpager2-1.0.0/res
-com.codengineassessment.app-jetified-lifecycle-process-2.6.2-11 /Users/yashbhardwaj/.gradle/caches/transforms-3/36983a44e6132b212071078884564bba/transformed/jetified-lifecycle-process-2.6.2/res
-com.codengineassessment.app-jetified-savedstate-ktx-1.2.1-12 /Users/yashbhardwaj/.gradle/caches/transforms-3/3afd5d9fde523b7140c8e6fdceb82c43/transformed/jetified-savedstate-ktx-1.2.1/res
-com.codengineassessment.app-jetified-profileinstaller-1.3.0-13 /Users/yashbhardwaj/.gradle/caches/transforms-3/3ffea149dfe3a1caa8d76d87dd8ed590/transformed/jetified-profileinstaller-1.3.0/res
-com.codengineassessment.app-lifecycle-runtime-2.6.2-14 /Users/yashbhardwaj/.gradle/caches/transforms-3/4b08f9bc903cb96c43576a8d54cb7b08/transformed/lifecycle-runtime-2.6.2/res
-com.codengineassessment.app-recyclerview-1.1.0-15 /Users/yashbhardwaj/.gradle/caches/transforms-3/4c7b5670d22cd3badd49c6524638bccd/transformed/recyclerview-1.1.0/res
-com.codengineassessment.app-transition-1.4.1-16 /Users/yashbhardwaj/.gradle/caches/transforms-3/4fd7969966e0e72b584bbdf08374f2de/transformed/transition-1.4.1/res
-com.codengineassessment.app-navigation-runtime-ktx-2.7.3-17 /Users/yashbhardwaj/.gradle/caches/transforms-3/53b2aeccfbbb00b62e41015d521dfaa1/transformed/navigation-runtime-ktx-2.7.3/res
-com.codengineassessment.app-navigation-ui-ktx-2.7.3-18 /Users/yashbhardwaj/.gradle/caches/transforms-3/652a0cd8abb9242ebeb11ab120cdfe97/transformed/navigation-ui-ktx-2.7.3/res
-com.codengineassessment.app-slidingpanelayout-1.2.0-19 /Users/yashbhardwaj/.gradle/caches/transforms-3/686e802890206c71b49ea9c615838b14/transformed/slidingpanelayout-1.2.0/res
-com.codengineassessment.app-navigation-common-ktx-2.7.3-20 /Users/yashbhardwaj/.gradle/caches/transforms-3/6956052801e530315ae86f672a7a041d/transformed/navigation-common-ktx-2.7.3/res
-com.codengineassessment.app-constraintlayout-2.1.4-21 /Users/yashbhardwaj/.gradle/caches/transforms-3/6959ce13f10ea9e5fa9ea2af5318405b/transformed/constraintlayout-2.1.4/res
-com.codengineassessment.app-jetified-lifecycle-viewmodel-savedstate-2.6.2-22 /Users/yashbhardwaj/.gradle/caches/transforms-3/6ba69ab42814c7b2a5fc2a4c20034275/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/res
-com.codengineassessment.app-lifecycle-livedata-core-2.6.2-23 /Users/yashbhardwaj/.gradle/caches/transforms-3/751dfb81811283bedcaef879c9cd2c9f/transformed/lifecycle-livedata-core-2.6.2/res
-com.codengineassessment.app-jetified-activity-1.8.0-beta01-24 /Users/yashbhardwaj/.gradle/caches/transforms-3/762126a9a5752f7fe33b4213c28766e6/transformed/jetified-activity-1.8.0-beta01/res
-com.codengineassessment.app-core-1.12.0-25 /Users/yashbhardwaj/.gradle/caches/transforms-3/7bb0d601ad2dcb801b857c3ab94d7a13/transformed/core-1.12.0/res
-com.codengineassessment.app-fragment-1.6.0-26 /Users/yashbhardwaj/.gradle/caches/transforms-3/7e10fd3ac2ed4f5a2eafc7310eca14a1/transformed/fragment-1.6.0/res
-com.codengineassessment.app-jetified-lifecycle-livedata-core-ktx-2.6.2-27 /Users/yashbhardwaj/.gradle/caches/transforms-3/854f44dc2d70be2a78ea5cfed91b6574/transformed/jetified-lifecycle-livedata-core-ktx-2.6.2/res
-com.codengineassessment.app-databinding-adapters-7.4.1-28 /Users/yashbhardwaj/.gradle/caches/transforms-3/86025d42964adefe087b04aefd46a54b/transformed/databinding-adapters-7.4.1/res
-com.codengineassessment.app-jetified-window-1.0.0-29 /Users/yashbhardwaj/.gradle/caches/transforms-3/88590121ed640b5e51e4d12e44927a34/transformed/jetified-window-1.0.0/res
-com.codengineassessment.app-jetified-emoji2-views-helper-1.2.0-30 /Users/yashbhardwaj/.gradle/caches/transforms-3/8c30cd95892ebf04b69271b6d135ba27/transformed/jetified-emoji2-views-helper-1.2.0/res
-com.codengineassessment.app-jetified-lifecycle-livedata-ktx-2.6.2-31 /Users/yashbhardwaj/.gradle/caches/transforms-3/8dc3e5ba3ad9be840e02c73641c46a28/transformed/jetified-lifecycle-livedata-ktx-2.6.2/res
-com.codengineassessment.app-jetified-lottie-3.7.0-32 /Users/yashbhardwaj/.gradle/caches/transforms-3/9cf045ddf54fe693719e293d37d08c59/transformed/jetified-lottie-3.7.0/res
-com.codengineassessment.app-navigation-fragment-2.7.3-33 /Users/yashbhardwaj/.gradle/caches/transforms-3/a120eab2d108a081e0bcadacaececd1c/transformed/navigation-fragment-2.7.3/res
-com.codengineassessment.app-jetified-appcompat-resources-1.6.1-34 /Users/yashbhardwaj/.gradle/caches/transforms-3/a3dcd68708cb0251943f9fecda5a28fe/transformed/jetified-appcompat-resources-1.6.1/res
-com.codengineassessment.app-navigation-fragment-ktx-2.7.3-35 /Users/yashbhardwaj/.gradle/caches/transforms-3/a71ae9af2930d97e18360a73f5798e1a/transformed/navigation-fragment-ktx-2.7.3/res
-com.codengineassessment.app-core-runtime-2.2.0-36 /Users/yashbhardwaj/.gradle/caches/transforms-3/ad1a4387dc7b13a921240943ca3ae7ab/transformed/core-runtime-2.2.0/res
-com.codengineassessment.app-navigation-runtime-2.7.3-37 /Users/yashbhardwaj/.gradle/caches/transforms-3/af6bfb7eab9189c2f7799a761e7bb47e/transformed/navigation-runtime-2.7.3/res
-com.codengineassessment.app-jetified-fragment-ktx-1.6.0-38 /Users/yashbhardwaj/.gradle/caches/transforms-3/b1324c511ff16511e60071ae2350f50d/transformed/jetified-fragment-ktx-1.6.0/res
-com.codengineassessment.app-coordinatorlayout-1.2.0-39 /Users/yashbhardwaj/.gradle/caches/transforms-3/b535cf1422da58dfcaa72e7778d9e892/transformed/coordinatorlayout-1.2.0/res
-com.codengineassessment.app-jetified-annotation-experimental-1.3.0-40 /Users/yashbhardwaj/.gradle/caches/transforms-3/ca3b0aa5e66b7c4e50e1cb4fb8856c00/transformed/jetified-annotation-experimental-1.3.0/res
-com.codengineassessment.app-drawerlayout-1.1.1-41 /Users/yashbhardwaj/.gradle/caches/transforms-3/cd93e5492fa37780057968fc4de20f81/transformed/drawerlayout-1.1.1/res
-com.codengineassessment.app-jetified-activity-ktx-1.8.0-beta01-42 /Users/yashbhardwaj/.gradle/caches/transforms-3/d38b9d95bd9ad44889bd07868fe1e407/transformed/jetified-activity-ktx-1.8.0-beta01/res
-com.codengineassessment.app-databinding-runtime-7.4.1-43 /Users/yashbhardwaj/.gradle/caches/transforms-3/e105d89e4c73ed8915ec03a7e0e815aa/transformed/databinding-runtime-7.4.1/res
-com.codengineassessment.app-navigation-common-2.7.3-44 /Users/yashbhardwaj/.gradle/caches/transforms-3/e1a52482df93ed084534171f815a1335/transformed/navigation-common-2.7.3/res
-com.codengineassessment.app-jetified-glide-4.12.0-45 /Users/yashbhardwaj/.gradle/caches/transforms-3/e33906f68d73061fc6a59c258cd1161f/transformed/jetified-glide-4.12.0/res
-com.codengineassessment.app-jetified-savedstate-1.2.1-46 /Users/yashbhardwaj/.gradle/caches/transforms-3/eb8f2161b3c91c751af3e8d4212a55e2/transformed/jetified-savedstate-1.2.1/res
-com.codengineassessment.app-jetified-startup-runtime-1.1.1-47 /Users/yashbhardwaj/.gradle/caches/transforms-3/ecf21d08cf48ea9b2ee4aae79f15ed2b/transformed/jetified-startup-runtime-1.1.1/res
-com.codengineassessment.app-jetified-lifecycle-runtime-ktx-2.6.2-48 /Users/yashbhardwaj/.gradle/caches/transforms-3/f67413b1be950a33ff90fc708ead9689/transformed/jetified-lifecycle-runtime-ktx-2.6.2/res
-com.codengineassessment.app-jetified-lifecycle-service-2.6.2-49 /Users/yashbhardwaj/.gradle/caches/transforms-3/f977bb6b2f1a4f21889b2ad5c9614e6b/transformed/jetified-lifecycle-service-2.6.2/res
-com.codengineassessment.app-prod-50 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/pngs/prod/debug
-com.codengineassessment.app-prod-51 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/resValues/prod/debug
-com.codengineassessment.app-prod-52 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/rs/prod/debug
-com.codengineassessment.app-packageProdDebugResources-53 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/merged.dir
-com.codengineassessment.app-packageProdDebugResources-54 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/stripped.dir
-com.codengineassessment.app-merged_res-55 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/merged_res/prodDebug
-com.codengineassessment.app-debug-56 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/debug/res
-com.codengineassessment.app-main-57 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/main/res
-com.codengineassessment.app-prod-58 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/prod/res
-com.codengineassessment.app-prodDebug-59 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/prodDebug/res
+com.codengineassessment.app-room-runtime-2.4.3-3 /Users/yashbhardwaj/.gradle/caches/transforms-3/0ab4ecd640491eac0e9fbc1680e4bbba/transformed/room-runtime-2.4.3/res
+com.codengineassessment.app-cardview-1.0.0-4 /Users/yashbhardwaj/.gradle/caches/transforms-3/0df8249ada1a8674390a3a0dc6b66446/transformed/cardview-1.0.0/res
+com.codengineassessment.app-navigation-ui-2.7.3-5 /Users/yashbhardwaj/.gradle/caches/transforms-3/11e11589e9d4645e434fa481e4a8354d/transformed/navigation-ui-2.7.3/res
+com.codengineassessment.app-jetified-pinview-1.4.4-6 /Users/yashbhardwaj/.gradle/caches/transforms-3/165a445cf392e386b5846640b465cec7/transformed/jetified-pinview-1.4.4/res
+com.codengineassessment.app-lifecycle-livedata-2.6.2-7 /Users/yashbhardwaj/.gradle/caches/transforms-3/17699808bd1139cae4153b93b9264579/transformed/lifecycle-livedata-2.6.2/res
+com.codengineassessment.app-jetified-lifecycle-viewmodel-ktx-2.6.2-8 /Users/yashbhardwaj/.gradle/caches/transforms-3/1d305f70c9a3d69be5b349f149b9145d/transformed/jetified-lifecycle-viewmodel-ktx-2.6.2/res
+com.codengineassessment.app-material-1.11.0-alpha03-9 /Users/yashbhardwaj/.gradle/caches/transforms-3/1e9534c51d557574500c1ba864880b0c/transformed/material-1.11.0-alpha03/res
+com.codengineassessment.app-appcompat-1.6.1-10 /Users/yashbhardwaj/.gradle/caches/transforms-3/2d723b179f4af2930cf57d0a31215867/transformed/appcompat-1.6.1/res
+com.codengineassessment.app-jetified-viewpager2-1.0.0-11 /Users/yashbhardwaj/.gradle/caches/transforms-3/325162eb8f49ec436f62c7c767ca337b/transformed/jetified-viewpager2-1.0.0/res
+com.codengineassessment.app-jetified-lifecycle-process-2.6.2-12 /Users/yashbhardwaj/.gradle/caches/transforms-3/36983a44e6132b212071078884564bba/transformed/jetified-lifecycle-process-2.6.2/res
+com.codengineassessment.app-jetified-savedstate-ktx-1.2.1-13 /Users/yashbhardwaj/.gradle/caches/transforms-3/3afd5d9fde523b7140c8e6fdceb82c43/transformed/jetified-savedstate-ktx-1.2.1/res
+com.codengineassessment.app-jetified-profileinstaller-1.3.0-14 /Users/yashbhardwaj/.gradle/caches/transforms-3/3ffea149dfe3a1caa8d76d87dd8ed590/transformed/jetified-profileinstaller-1.3.0/res
+com.codengineassessment.app-lifecycle-runtime-2.6.2-15 /Users/yashbhardwaj/.gradle/caches/transforms-3/4b08f9bc903cb96c43576a8d54cb7b08/transformed/lifecycle-runtime-2.6.2/res
+com.codengineassessment.app-recyclerview-1.1.0-16 /Users/yashbhardwaj/.gradle/caches/transforms-3/4c7b5670d22cd3badd49c6524638bccd/transformed/recyclerview-1.1.0/res
+com.codengineassessment.app-transition-1.4.1-17 /Users/yashbhardwaj/.gradle/caches/transforms-3/4fd7969966e0e72b584bbdf08374f2de/transformed/transition-1.4.1/res
+com.codengineassessment.app-navigation-runtime-ktx-2.7.3-18 /Users/yashbhardwaj/.gradle/caches/transforms-3/53b2aeccfbbb00b62e41015d521dfaa1/transformed/navigation-runtime-ktx-2.7.3/res
+com.codengineassessment.app-sqlite-2.2.0-19 /Users/yashbhardwaj/.gradle/caches/transforms-3/54bd8aa79ea52ea4403d9360a1d27fcd/transformed/sqlite-2.2.0/res
+com.codengineassessment.app-navigation-ui-ktx-2.7.3-20 /Users/yashbhardwaj/.gradle/caches/transforms-3/652a0cd8abb9242ebeb11ab120cdfe97/transformed/navigation-ui-ktx-2.7.3/res
+com.codengineassessment.app-slidingpanelayout-1.2.0-21 /Users/yashbhardwaj/.gradle/caches/transforms-3/686e802890206c71b49ea9c615838b14/transformed/slidingpanelayout-1.2.0/res
+com.codengineassessment.app-navigation-common-ktx-2.7.3-22 /Users/yashbhardwaj/.gradle/caches/transforms-3/6956052801e530315ae86f672a7a041d/transformed/navigation-common-ktx-2.7.3/res
+com.codengineassessment.app-constraintlayout-2.1.4-23 /Users/yashbhardwaj/.gradle/caches/transforms-3/6959ce13f10ea9e5fa9ea2af5318405b/transformed/constraintlayout-2.1.4/res
+com.codengineassessment.app-jetified-lifecycle-viewmodel-savedstate-2.6.2-24 /Users/yashbhardwaj/.gradle/caches/transforms-3/6ba69ab42814c7b2a5fc2a4c20034275/transformed/jetified-lifecycle-viewmodel-savedstate-2.6.2/res
+com.codengineassessment.app-lifecycle-livedata-core-2.6.2-25 /Users/yashbhardwaj/.gradle/caches/transforms-3/751dfb81811283bedcaef879c9cd2c9f/transformed/lifecycle-livedata-core-2.6.2/res
+com.codengineassessment.app-jetified-activity-1.8.0-beta01-26 /Users/yashbhardwaj/.gradle/caches/transforms-3/762126a9a5752f7fe33b4213c28766e6/transformed/jetified-activity-1.8.0-beta01/res
+com.codengineassessment.app-core-1.12.0-27 /Users/yashbhardwaj/.gradle/caches/transforms-3/7bb0d601ad2dcb801b857c3ab94d7a13/transformed/core-1.12.0/res
+com.codengineassessment.app-fragment-1.6.0-28 /Users/yashbhardwaj/.gradle/caches/transforms-3/7e10fd3ac2ed4f5a2eafc7310eca14a1/transformed/fragment-1.6.0/res
+com.codengineassessment.app-jetified-lifecycle-livedata-core-ktx-2.6.2-29 /Users/yashbhardwaj/.gradle/caches/transforms-3/854f44dc2d70be2a78ea5cfed91b6574/transformed/jetified-lifecycle-livedata-core-ktx-2.6.2/res
+com.codengineassessment.app-databinding-adapters-7.4.1-30 /Users/yashbhardwaj/.gradle/caches/transforms-3/86025d42964adefe087b04aefd46a54b/transformed/databinding-adapters-7.4.1/res
+com.codengineassessment.app-jetified-window-1.0.0-31 /Users/yashbhardwaj/.gradle/caches/transforms-3/88590121ed640b5e51e4d12e44927a34/transformed/jetified-window-1.0.0/res
+com.codengineassessment.app-jetified-emoji2-views-helper-1.2.0-32 /Users/yashbhardwaj/.gradle/caches/transforms-3/8c30cd95892ebf04b69271b6d135ba27/transformed/jetified-emoji2-views-helper-1.2.0/res
+com.codengineassessment.app-jetified-lifecycle-livedata-ktx-2.6.2-33 /Users/yashbhardwaj/.gradle/caches/transforms-3/8dc3e5ba3ad9be840e02c73641c46a28/transformed/jetified-lifecycle-livedata-ktx-2.6.2/res
+com.codengineassessment.app-jetified-lottie-3.7.0-34 /Users/yashbhardwaj/.gradle/caches/transforms-3/9cf045ddf54fe693719e293d37d08c59/transformed/jetified-lottie-3.7.0/res
+com.codengineassessment.app-navigation-fragment-2.7.3-35 /Users/yashbhardwaj/.gradle/caches/transforms-3/a120eab2d108a081e0bcadacaececd1c/transformed/navigation-fragment-2.7.3/res
+com.codengineassessment.app-jetified-appcompat-resources-1.6.1-36 /Users/yashbhardwaj/.gradle/caches/transforms-3/a3dcd68708cb0251943f9fecda5a28fe/transformed/jetified-appcompat-resources-1.6.1/res
+com.codengineassessment.app-sqlite-framework-2.2.0-37 /Users/yashbhardwaj/.gradle/caches/transforms-3/a6d98397bdd9e7bb56b052130dd3be70/transformed/sqlite-framework-2.2.0/res
+com.codengineassessment.app-navigation-fragment-ktx-2.7.3-38 /Users/yashbhardwaj/.gradle/caches/transforms-3/a71ae9af2930d97e18360a73f5798e1a/transformed/navigation-fragment-ktx-2.7.3/res
+com.codengineassessment.app-core-runtime-2.2.0-39 /Users/yashbhardwaj/.gradle/caches/transforms-3/ad1a4387dc7b13a921240943ca3ae7ab/transformed/core-runtime-2.2.0/res
+com.codengineassessment.app-navigation-runtime-2.7.3-40 /Users/yashbhardwaj/.gradle/caches/transforms-3/af6bfb7eab9189c2f7799a761e7bb47e/transformed/navigation-runtime-2.7.3/res
+com.codengineassessment.app-jetified-fragment-ktx-1.6.0-41 /Users/yashbhardwaj/.gradle/caches/transforms-3/b1324c511ff16511e60071ae2350f50d/transformed/jetified-fragment-ktx-1.6.0/res
+com.codengineassessment.app-coordinatorlayout-1.2.0-42 /Users/yashbhardwaj/.gradle/caches/transforms-3/b535cf1422da58dfcaa72e7778d9e892/transformed/coordinatorlayout-1.2.0/res
+com.codengineassessment.app-jetified-annotation-experimental-1.3.0-43 /Users/yashbhardwaj/.gradle/caches/transforms-3/ca3b0aa5e66b7c4e50e1cb4fb8856c00/transformed/jetified-annotation-experimental-1.3.0/res
+com.codengineassessment.app-drawerlayout-1.1.1-44 /Users/yashbhardwaj/.gradle/caches/transforms-3/cd93e5492fa37780057968fc4de20f81/transformed/drawerlayout-1.1.1/res
+com.codengineassessment.app-jetified-activity-ktx-1.8.0-beta01-45 /Users/yashbhardwaj/.gradle/caches/transforms-3/d38b9d95bd9ad44889bd07868fe1e407/transformed/jetified-activity-ktx-1.8.0-beta01/res
+com.codengineassessment.app-jetified-room-ktx-2.4.3-46 /Users/yashbhardwaj/.gradle/caches/transforms-3/db1804ea77a3b086e9543cf548dbf34a/transformed/jetified-room-ktx-2.4.3/res
+com.codengineassessment.app-databinding-runtime-7.4.1-47 /Users/yashbhardwaj/.gradle/caches/transforms-3/e105d89e4c73ed8915ec03a7e0e815aa/transformed/databinding-runtime-7.4.1/res
+com.codengineassessment.app-navigation-common-2.7.3-48 /Users/yashbhardwaj/.gradle/caches/transforms-3/e1a52482df93ed084534171f815a1335/transformed/navigation-common-2.7.3/res
+com.codengineassessment.app-jetified-glide-4.12.0-49 /Users/yashbhardwaj/.gradle/caches/transforms-3/e33906f68d73061fc6a59c258cd1161f/transformed/jetified-glide-4.12.0/res
+com.codengineassessment.app-jetified-savedstate-1.2.1-50 /Users/yashbhardwaj/.gradle/caches/transforms-3/eb8f2161b3c91c751af3e8d4212a55e2/transformed/jetified-savedstate-1.2.1/res
+com.codengineassessment.app-jetified-startup-runtime-1.1.1-51 /Users/yashbhardwaj/.gradle/caches/transforms-3/ecf21d08cf48ea9b2ee4aae79f15ed2b/transformed/jetified-startup-runtime-1.1.1/res
+com.codengineassessment.app-jetified-lifecycle-runtime-ktx-2.6.2-52 /Users/yashbhardwaj/.gradle/caches/transforms-3/f67413b1be950a33ff90fc708ead9689/transformed/jetified-lifecycle-runtime-ktx-2.6.2/res
+com.codengineassessment.app-jetified-lifecycle-service-2.6.2-53 /Users/yashbhardwaj/.gradle/caches/transforms-3/f977bb6b2f1a4f21889b2ad5c9614e6b/transformed/jetified-lifecycle-service-2.6.2/res
+com.codengineassessment.app-prod-54 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/pngs/prod/debug
+com.codengineassessment.app-prod-55 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/resValues/prod/debug
+com.codengineassessment.app-prod-56 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/generated/res/rs/prod/debug
+com.codengineassessment.app-packageProdDebugResources-57 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/merged.dir
+com.codengineassessment.app-packageProdDebugResources-58 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/incremental/prodDebug/packageProdDebugResources/stripped.dir
+com.codengineassessment.app-merged_res-59 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/build/intermediates/merged_res/prodDebug
+com.codengineassessment.app-debug-60 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/debug/res
+com.codengineassessment.app-main-61 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/main/res
+com.codengineassessment.app-prod-62 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/prod/res
+com.codengineassessment.app-prodDebug-63 /Users/yashbhardwaj/Desktop/Android Demo Workspacw/codengine_demo/app/src/prodDebug/res

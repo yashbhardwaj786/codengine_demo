@@ -1,31 +1,45 @@
 package com.codengineassessment.ui.viewmodel
 
+import android.content.Context
 import androidx.databinding.ObservableField
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.asLiveData
+import androidx.lifecycle.viewModelScope
 import com.codengineassessment.common.BaseViewModel
+import com.codengineassessment.data.db.TransactionData
 import com.codengineassessment.data.model.CartItemProduct
-import com.codengineassessment.notifiers.Notify
+import com.codengineassessment.repository.CartRepository
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class CartViewModel(
+    private val repository: CartRepository
 ): BaseViewModel() {
     var isCartEmpty = ObservableField(false)
     var cartItemProductList = ArrayList<CartItemProduct>()
+    val allWords: LiveData<List<TransactionData>> = repository.allUsers.asLiveData()
 
-    fun continueShopping(){
-        notifier.notify(Notify(CONTINUE_SHOPPING_CLICKED, ""))
-    }
+    fun confirmAndPayDBCall(){
+        val transactionInfo = TransactionData(
+            firstName = "Yash",
+            userId = "101",
+        lastName =  "Bhardwaj",
+        mobile = "8386915333",
+        email = "yashpremsharma@gmail.com",
+        quantity =  3,
+        price = 500.00,
+        time = "09.00 AM",
+        )
 
-    fun increaseQuantityCLick(data: CartItemProduct, position: Int){
-        notifier.notify(Notify(INCREASE_QUANTITY, data, position))
-    }
-    fun decreaseQuantityCLick(data: CartItemProduct, position: Int){
-        notifier.notify(Notify(DECREASE_QUANTITY, data, position))
-    }
+        CoroutineScope(Dispatchers.IO).launch{
+            repository.insert(transactionInfo)
+        }
+//        viewModelScope.launch {
+//            repository.insert(transactionInfo)
+//        }
 
-    companion object {
-        const val CONTINUE_SHOPPING_CLICKED = "CONTINUE_SHOPPING_CLICKED"
-        const val INCREASE_QUANTITY = "INCREASE_QUANTITY"
-        const val DECREASE_QUANTITY = "DECREASE_QUANTITY"
     }
 
 }

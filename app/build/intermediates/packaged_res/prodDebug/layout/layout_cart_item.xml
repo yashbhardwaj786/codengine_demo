@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                            
+                                                                        
+
+                 
+                       
+                                                                        
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginBottom="@dimen/margin_15dp" android:tag="layout/layout_cart_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="@dimen/margin_3dp"
+            android:minWidth="200dp"
+            android:orientation="vertical"
+            android:translationZ="@dimen/margin_3dp"
+            app:cardBackgroundColor="@color/bg_style_solid_color"
+            app:cardCornerRadius="@dimen/margin_12dp"
+            app:cardElevation="@dimen/margin_0dp"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/foodImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:tag="binding_1"                                      
+                                                    
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/big_mac" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/foodName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="@dimen/margin_15dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:tag="binding_2"        
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintHorizontal_bias="0.38"
+                    app:layout_constraintStart_toEndOf="@+id/foodImage"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/food_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_10dp"
+                    android:tag="binding_3"             
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginEnd="@dimen/margin_40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.202"
+                    app:layout_constraintTop_toBottomOf="@+id/foodName"
+                    tools:text="@string/food_price" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.697"
+                    app:srcCompat="@drawable/baseline_add_circle_24" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:tag="binding_4"           
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginHorizontal="@dimen/margin_15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/increase"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.697"
+                    app:srcCompat="@drawable/baseline_add_circle_24"
+                    tools:layout_editor_absoluteY="67dp"
+                    tools:text="@string/food_quantity" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/quantity"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginHorizontal="@dimen/margin_15dp"
+                    app:layout_constraintVertical_bias="0.697"
+                    app:srcCompat="@drawable/baseline_do_disturb_on_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

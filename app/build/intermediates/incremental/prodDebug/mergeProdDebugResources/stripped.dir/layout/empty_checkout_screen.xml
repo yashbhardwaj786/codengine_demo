@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+
+    
+
+                 
+                            
+                                                                        
+
+           
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_15dp"
+        android:layout_marginEnd="@dimen/margin_15dp"
+        android:gravity="center"
+        android:orientation="vertical" android:tag="layout/empty_checkout_screen_0">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cartImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ic_empty_cart" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:text="@string/missing_cart_items"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:lineHeight="21.6sp"
+            android:textStyle="normal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/start_your_journey"
+            android:textColor="@color/black_2b"
+            android:textSize="@dimen/text_size_14sp"
+            app:lineHeight="19.6sp"
+            tools:text="Start your food journey today" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continueShopping"
+            android:layout_width="wrap_content"
+            android:paddingVertical="@dimen/margin_12dp"
+            android:paddingHorizontal="@dimen/margin_33dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:elevation="@dimen/margin_3dp"
+            android:minHeight="@dimen/margin_33dp"
+            android:layout_gravity="center_horizontal"
+            android:stateListAnimator="@null"
+            android:text="@string/start_shopping"
+            android:textAllCaps="false"
+            app:lineHeight="@dimen/text_size_24sp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="2.4sp"
+            />
+
+    </LinearLayout>
+         

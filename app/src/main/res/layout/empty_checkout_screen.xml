@@ -60,7 +60,6 @@
             android:minHeight="@dimen/margin_33dp"
             android:layout_gravity="center_horizontal"
             android:stateListAnimator="@null"
-            android:onClick="@{()->viewModel.continueShopping()}"
             android:text="@string/start_shopping"
             android:textAllCaps="false"
             app:lineHeight="@dimen/text_size_24sp"

@@ -4,6 +4,8 @@
     <color name="black">#000000</color>
     <color name="black_2b">#25282B</color>
     <color name="black_5">#0D000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="black_with_20">#33000000</color>
     <color name="blue">#4288F4</color>
     <color name="brownish_grey">#6c6c6c</color>
     <color name="cart_shadow">@color/screen_bg_off_white_color</color>
@@ -22,15 +24,18 @@
     <color name="purple_color">#996BA7</color>
     <color name="screen_bg_off_white_color">#FBFBFB</color>
     <color name="soft_blue">#6896db</color>
+    <color name="start_color_bg_gradient">@color/screen_bg_off_white_color</color>
     <color name="tomato_55">#8ced2525</color>
     <color name="toolbar_color">@color/colorPrimaryDark</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="add_to_cart">Add to cart</string>
+    <string name="add_to_cart">Add Item</string>
     <string name="app_name" translatable="false">"Codengine Assessment"</string>
     <string name="category_name">Burger</string>
+    <string name="checkout">Checkout</string>
     <string name="clear_dogs">Clear Dogs!</string>
     <string name="close_drawer">Close</string>
+    <string name="confirm_pay">Confirm &amp; Pay</string>
     <string name="enter_pin">Enter 4 Digit Login Pin</string>
     <string name="food_name">Cheese Grilled Sandwich</string>
     <string name="food_price">$ 50.10</string>
@@ -40,10 +45,17 @@
     <string name="logout">Logout</string>
     <string name="logout_message">Are you sure, you want to logout?</string>
     <string name="menu">Menu</string>
+    <string name="missing_cart_items">Missing Cart Items?</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="open_drawer">Open</string>
     <string name="random_dog_generator">Random Dog Generator!</string>
     <string name="recently_generated">My Recently Generated Dog!</string>
+    <string name="start_shopping">Start Shopping</string>
+    <string name="start_your_journey">Start Your food Journey Today</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="tax">Tax</string>
+    <string name="togo">TO GO</string>
+    <string name="total">Total</string>
     <string name="transaction">Transaction</string>
     <string name="user_name_demo">John Doe</string>
     <string name="user_role_demo">Manager</string>
@@ -65,5 +77,16 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:actionBarSize">@dimen/app_bar_height</item>
+    </style>
+    <style name="TransParentBottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
 </resources>

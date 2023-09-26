@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.codengineassessment.R
@@ -12,10 +11,12 @@ import com.codengineassessment.data.model.CartItemProduct
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.databinding.LayoutCartItemBinding
 import com.codengineassessment.ui.viewmodel.CartViewModel
+import com.codengineassessment.ui.viewmodel.CartContract
 
 class CartListItemAdapter(
     private val viewModel: CartViewModel,
     var cartItemList: ArrayList<CartItemProduct>,
+    val cartListener: CartContract,
     private val preferenceProvider: PreferenceProvider
 
 ) : RecyclerView.Adapter<CartListItemAdapter.ProductViewHolder>() {
@@ -37,11 +38,12 @@ class CartListItemAdapter(
         val category = cartItemList[position]
         holder.binding.viewModel = viewModel
         holder.binding.data = category
+
         holder.binding.increase.setOnClickListener {
-            viewModel.increaseQuantityCLick(category, holder.adapterPosition)
+            cartListener.increaseQuantity(category, holder.adapterPosition)
         }
         holder.binding.decrease.setOnClickListener {
-            viewModel.decreaseQuantityCLick(category, holder.adapterPosition)
+            cartListener.decreaseQuantity(category, holder.adapterPosition)
         }
     }
 

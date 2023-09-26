@@ -22,7 +22,7 @@ public class LayoutCategoryItemBindingImpl extends LayoutCategoryItemBinding imp
     private final com.google.android.material.card.MaterialCardView mboundView1;
     // variables
     @Nullable
-    private final android.view.View.OnClickListener mCallback2;
+    private final android.view.View.OnClickListener mCallback3;
     // values
     // listeners
     // Inverse Binding Event Handlers
@@ -43,7 +43,7 @@ public class LayoutCategoryItemBindingImpl extends LayoutCategoryItemBinding imp
         this.textView5.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback2 = new com.codengineassessment.generated.callback.OnClickListener(this, 1);
+        mCallback3 = new com.codengineassessment.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -203,7 +203,7 @@ public class LayoutCategoryItemBindingImpl extends LayoutCategoryItemBinding imp
         if ((dirtyFlags & 0x10L) != 0) {
             // api target 1
 
-            this.mboundView1.setOnClickListener(mCallback2);
+            this.mboundView1.setOnClickListener(mCallback3);
         }
     }
     // Listener Stub Implementations

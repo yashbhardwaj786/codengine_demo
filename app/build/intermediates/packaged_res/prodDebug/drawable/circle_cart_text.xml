@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/cart_shadow" />
+            <size
+                android:width="40dp"
+                android:height="40dp" />
+        </shape>
+    </item>
+    <item android:top="@dimen/margin_3dp"
+        android:left="@dimen/margin_3dp"
+        android:bottom="@dimen/margin_3dp"
+        android:right="@dimen/margin_3dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/coral" />
+            <size
+                android:width="37dp"
+                android:height="37dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -11,9 +11,7 @@ import com.codengineassessment.utils.nullSafeErrorLogging
 import org.json.JSONObject
 import java.lang.Exception
 
-class MenuRepository (
-    private val formService: FormService
-    ):  BaseRepository() {
+class MenuRepository ():  BaseRepository() {
 
     suspend fun fetchMenus(context: Context): Any {
         val menuResultObject = MenuResult()

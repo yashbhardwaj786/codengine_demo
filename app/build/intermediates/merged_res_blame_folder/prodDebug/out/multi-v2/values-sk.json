@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.codengineassessment.app-mergeProdDebugResources-53:/values-sk/values-sk.xml",
+            "outputFile": "com.codengineassessment.app-mergeProdDebugResources-57:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "/Users/yashbhardwaj/.gradle/caches/transforms-3/7bb0d601ad2dcb801b857c3ab94d7a13/transformed/core-1.12.0/res/values-sk/values-sk.xml",

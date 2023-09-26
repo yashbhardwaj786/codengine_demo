@@ -18,34 +18,41 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding imple
     // views
     @NonNull
     private final androidx.constraintlayout.widget.ConstraintLayout mboundView0;
+    @NonNull
+    private final com.google.android.material.card.MaterialCardView mboundView1;
     // variables
     @Nullable
     private final android.view.View.OnClickListener mCallback1;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback2;
     // values
     // listeners
     // Inverse Binding Event Handlers
 
     public LayoutProductItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private LayoutProductItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (androidx.appcompat.widget.AppCompatImageView) bindings[1]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
-            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[2]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
             , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
             );
         this.foodImage.setTag(null);
         this.foodName.setTag(null);
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.mboundView1 = (com.google.android.material.card.MaterialCardView) bindings[1];
+        this.mboundView1.setTag(null);
         this.price.setTag(null);
         this.quantity.setTag(null);
         this.save.setTag(null);
         setRootTag(root);
         // listeners
         mCallback1 = new com.codengineassessment.generated.callback.OnClickListener(this, 1);
+        mCallback2 = new com.codengineassessment.generated.callback.OnClickListener(this, 2);
         invalidateAll();
     }
 
@@ -152,28 +159,54 @@ public class LayoutProductItemBindingImpl extends LayoutProductItemBinding imple
         if ((dirtyFlags & 0x4L) != 0) {
             // api target 1
 
-            this.save.setOnClickListener(mCallback1);
+            this.mboundView1.setOnClickListener(mCallback1);
+            this.save.setOnClickListener(mCallback2);
         }
     }
     // Listener Stub Implementations
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
-        // localize variables for thread safety
-        // viewModel
-        com.codengineassessment.ui.viewmodel.MenuViewModel viewModel = mViewModel;
-        // data
-        com.codengineassessment.data.model.Food data = mData;
-        // viewModel != null
-        boolean viewModelJavaLangObjectNull = false;
+        switch(sourceId) {
+            case 1: {
+                // localize variables for thread safety
+                // viewModel
+                com.codengineassessment.ui.viewmodel.MenuViewModel viewModel = mViewModel;
+                // data
+                com.codengineassessment.data.model.Food data = mData;
+                // viewModel != null
+                boolean viewModelJavaLangObjectNull = false;
 
 
 
-        viewModelJavaLangObjectNull = (viewModel) != (null);
-        if (viewModelJavaLangObjectNull) {
+                viewModelJavaLangObjectNull = (viewModel) != (null);
+                if (viewModelJavaLangObjectNull) {
 
 
 
-            viewModel.addToCart(data);
+                    viewModel.productClick(data);
+                }
+                break;
+            }
+            case 2: {
+                // localize variables for thread safety
+                // viewModel
+                com.codengineassessment.ui.viewmodel.MenuViewModel viewModel = mViewModel;
+                // data
+                com.codengineassessment.data.model.Food data = mData;
+                // viewModel != null
+                boolean viewModelJavaLangObjectNull = false;
+
+
+
+                viewModelJavaLangObjectNull = (viewModel) != (null);
+                if (viewModelJavaLangObjectNull) {
+
+
+
+                    viewModel.addToCart(data);
+                }
+                break;
+            }
         }
     }
     // dirty flag
