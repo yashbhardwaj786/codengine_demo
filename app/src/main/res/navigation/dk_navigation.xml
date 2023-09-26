@@ -9,12 +9,20 @@
         android:id="@+id/menuFragment"
         android:name="com.codengineassessment.ui.fragment.MenuFragment"
         android:label="@string/menu"
-        tools:layout="@layout/fragment_menu"/>
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_transactionFragment"
+            app:destination="@id/transactionFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/transactionFragment"
         android:name="com.codengineassessment.ui.fragment.TransactionFragment"
         android:label="@string/transaction"
-        tools:layout="@layout/fragment_transaction" />
+        tools:layout="@layout/fragment_transaction" >
+        <action
+            android:id="@+id/action_transactionFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
 
 </navigation>

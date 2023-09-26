@@ -54,7 +54,7 @@
                     tools:text="10"
                     android:text="@{``+data.quantity}"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/text_size_20sp"
+                    android:textSize="@dimen/text_size_18sp"
                     />
 
                 <View
@@ -72,7 +72,7 @@
                     android:ellipsize="end"
                     android:text="@{data.firstName +` `+data.lastName}"
                     android:textColor="@color/grey_61"
-                    android:textSize="@dimen/text_size_16sp"
+                    android:textSize="@dimen/text_size_14sp"
                     />
 
                 <androidx.appcompat.widget.AppCompatTextView
@@ -82,7 +82,7 @@
                     android:text="@{`$`+data.price}"
                     android:layout_marginVertical="@dimen/margin_10dp"
                     android:textColor="@color/grey_61"
-                    android:textSize="@dimen/text_size_18sp"
+                    android:textSize="@dimen/text_size_16sp"
                     />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
