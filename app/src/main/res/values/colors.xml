@@ -32,4 +32,6 @@
     <color name="start_color_bg_gradient">@color/screen_bg_off_white_color</color>
     <color name="address_submit_disable_bg">@color/dusk_blue_two_20</color>
     <color name="standard_button_text_color">@color/white</color>
+    <color name="light_green">#DFFAEC</color>
+    <color name="dark_green">#13C985</color>
 </resources>

@@ -1,5 +1,6 @@
 package com.codengineassessment.ui.activity
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.View
@@ -27,22 +28,16 @@ import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
 import androidx.lifecycle.Observer
 import com.codengineassessment.data.db.TransactionData
-import com.codengineassessment.data.model.Food
-import com.codengineassessment.ui.bottomsheet.ProductDescriptionDialogFragment
 import com.codengineassessment.ui.bottomsheet.ToGoContract
 import com.codengineassessment.ui.bottomsheet.ToGoDialogFragment
-import com.codengineassessment.utils.Constant.Companion.MANAGER_USER_ID
-import com.codengineassessment.utils.Constant.Companion.PREF_USER_ID
 import com.codengineassessment.utils.Constant.Companion.SUCCESSFULLY_PURCHASE
 import com.codengineassessment.utils.getCartCount
 import com.codengineassessment.utils.getCurrentTime
-import com.codengineassessment.utils.getCurrentTimestamp
 import com.codengineassessment.utils.showToast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.parceler.Parcels
 
 class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContract {
     override val kodein by kodein()
@@ -95,6 +90,7 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContrac
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         _binding = DataBindingUtil.setContentView(this, R.layout.activity_cart)
         setToolBar(getString(R.string.checkout), true)
         binding.viewModel = cartViewModel
@@ -118,10 +114,6 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContrac
         findViewById<Button>(R.id.continueShopping).setOnClickListener {
             finish()
         }
-        // TODO Remove here and add on Transaction page
-        cartViewModel.allWords?.observe(this, Observer {
-            println("hh yashal list $it")
-        })
         binding.toGo.setOnClickListener {
             openToGoBottomSheet()
         }

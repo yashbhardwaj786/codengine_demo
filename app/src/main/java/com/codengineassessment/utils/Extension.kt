@@ -134,7 +134,7 @@ fun getCurrentTimestamp(): Long {
 
 fun getCurrentTime(): String {
     val time = Calendar.getInstance().time
-    val formatter = SimpleDateFormat("HH:mm a")
+    val formatter = SimpleDateFormat("hh:mm a")
     return formatter.format(time)
 }
 fun String.isValidEmail(): Boolean {

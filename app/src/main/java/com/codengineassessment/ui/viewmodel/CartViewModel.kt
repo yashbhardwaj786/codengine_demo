@@ -22,7 +22,6 @@ class CartViewModel(
     var isCartEmpty = ObservableField(false)
 
     var cartItemProductList = ArrayList<CartItemProduct>()
-    val allWords: LiveData<List<TransactionData>> = repository.allUsers(prefs).asLiveData()
 
     fun confirmAndPayDBCall(transactionInfo: TransactionData){
         CoroutineScope(Dispatchers.IO).launch{
