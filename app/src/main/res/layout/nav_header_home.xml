@@ -26,15 +26,16 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:maxLength="30"
+        android:layout_marginStart="@dimen/margin_15dp"
         android:maxLines="1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37"
+        app:layout_constraintVertical_bias="0.359"
         tools:text="@string/user_name_demo" />
 
     <TextView
@@ -43,12 +44,14 @@
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginStart="@dimen/margin_15dp"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/header_name"
-        app:layout_constraintVertical_bias="0.197"
+        app:layout_constraintVertical_bias="0.202"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_16sp"
         tools:text="@string/user_role_demo" />
 
 

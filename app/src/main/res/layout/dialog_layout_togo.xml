@@ -92,6 +92,7 @@
                     android:inputType="textPersonName"
                     app:backgroundTint="@color/light_blue"
                     android:text="@={viewModel.firstName}"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'"
                     android:textColor="@color/light_blue"
                     android:textSize="@dimen/text_size_14sp" />
 
@@ -122,6 +123,7 @@
                     android:inputType="textPersonName"
                     app:backgroundTint="@color/light_blue"
                     android:text="@={viewModel.lastName}"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'"
                     android:textColor="@color/light_blue"
                     android:textSize="@dimen/text_size_14sp" />
 

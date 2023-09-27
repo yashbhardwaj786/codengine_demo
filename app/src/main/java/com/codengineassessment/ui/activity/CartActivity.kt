@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -40,7 +41,6 @@ import kotlinx.coroutines.launch
 
 class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContract {
     override val kodein by kodein()
-    private lateinit var cartCountHome: TextView
     private val prefs: PreferenceProvider by instance()
     private var _binding: ActivityCartBinding? = null
     private val binding get() = _binding!!
@@ -60,7 +60,6 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContrac
             cartList[position] = cartItemProduct
         }
         prefs.saveCartJsonObject(cartList)
-        showCartCount(cartCountHome, prefs)
         calculatePrice()
         if(cartList.isEmpty()){
             cartViewModel.isCartEmpty.set(true)
@@ -70,6 +69,8 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContrac
     private fun setToolBar(titleText: String, showBackButton: Boolean = false) {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         val title = findViewById<TextView>(R.id.title)
+        val cartLayout = findViewById<RelativeLayout>(R.id.cartLayout)
+        cartLayout.visibility = View.GONE
         title?.text = titleText
         title?.maxLines = 1
         title?.ellipsize = TextUtils.TruncateAt.END
@@ -93,8 +94,6 @@ class CartActivity : AppCompatActivity(), CartContract, KodeinAware, ToGoContrac
         _binding = DataBindingUtil.setContentView(this, R.layout.activity_cart)
         setToolBar(getString(R.string.checkout), true)
         binding.viewModel = cartViewModel
-        cartCountHome = findViewById<TextView>(R.id.cartCount)
-        showCartCount(cartCountHome, prefs)
         val cartItemProduct = prefs.getCartJsonObject() ?: ArrayList<CartItemProduct>()
         cartViewModel.cartItemProductList = cartItemProduct
         if (cartItemProduct.isEmpty()) {
