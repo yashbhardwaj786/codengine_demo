@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
@@ -50,18 +51,26 @@ class TransactionFragment : Fragment(), KodeinAware {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        view.findViewById<Button>(R.id.continueShopping).setOnClickListener {
+            mainActivity.navigateToMenuPage()
+        }
+
         transactionViewModel.allTransaction?.observe(viewLifecycleOwner, Observer {
             if(it.isNotEmpty()){
+                transactionViewModel.isEmptyTransaction.set(false)
                 it?.let {
                     initRecyclerView(it)
                 }
 
+            }else {
+                transactionViewModel.isEmptyTransaction.set(true)
             }
         })
 
         mainActivity.backIconLayout?.setOnClickListener {
             mainActivity.navigateToMenuPage()
         }
+
     }
 
     private fun initRecyclerView(transactions: List<TransactionData>){

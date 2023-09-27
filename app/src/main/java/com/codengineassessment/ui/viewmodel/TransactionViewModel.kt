@@ -1,5 +1,6 @@
 package com.codengineassessment.ui.viewmodel
 
+import androidx.databinding.ObservableField
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.asLiveData
 import com.codengineassessment.common.BaseViewModel
@@ -11,6 +12,8 @@ class TransactionViewModel(
     private val repository: CartRepository,
     private val prefs: PreferenceProvider
 ): BaseViewModel() {
+    var isEmptyTransaction = ObservableField(false)
+
 
     val allTransaction: LiveData<List<TransactionData>> = repository.allUsers(prefs).asLiveData()
 
