@@ -1,15 +1,13 @@
 package com.codengineassessment.data.db
 
-import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "transaction_info", indices = [Index(value = ["transactionId","userId","firstName","lastName","mobile","email","quantity","price","time"], unique = true)])
+@Entity(tableName = "transaction_info", indices = [Index(value = ["userId","firstName","lastName","mobile","email","quantity","price","time"], unique = true)])
 data class TransactionData(
     @PrimaryKey(autoGenerate = true)
     val id : Int = 0,
-    val transactionId : Long = 0,
     var userId: String,
     var firstName: String,
     var lastName: String,

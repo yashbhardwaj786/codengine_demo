@@ -2,7 +2,6 @@ package com.codengineassessment.common
 
 import android.content.Context
 import android.content.Intent
-import com.codengineassessment.R
 import com.codengineassessment.ui.activity.CartActivity
 import com.codengineassessment.ui.activity.LoginActivity
 import com.codengineassessment.ui.activity.MainActivity

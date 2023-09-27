@@ -1,7 +1,6 @@
 package com.codengineassessment.ui.activity
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -14,13 +13,10 @@ import com.codengineassessment.common.BaseViewModel
 import com.codengineassessment.common.ModuleMaster
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.databinding.ActivityLoginBinding
-import com.codengineassessment.databinding.ActivitySplashBinding
 import com.codengineassessment.notifiers.Notify
 import com.codengineassessment.ui.viewmodel.LoginViewModel
 import com.codengineassessment.ui.viewmodel.LoginViewModel.Companion.VERIFY_CLICK
-import com.codengineassessment.ui.viewmodel.MainViewModel
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
-import com.codengineassessment.ui.viewmodelfactory.MainViewModelFactory
 import com.codengineassessment.utils.Constant.Companion.EMPTY_PIN_MESSAGE
 import com.codengineassessment.utils.Constant.Companion.MANAGER_IMAGE
 import com.codengineassessment.utils.Constant.Companion.MANAGER_NAME
@@ -39,7 +35,6 @@ import com.codengineassessment.utils.Constant.Companion.SERVER_TYPE
 import com.codengineassessment.utils.Constant.Companion.SERVER_USER_ID
 import com.codengineassessment.utils.Constant.Companion.VALID_PIN_MESSAGE
 import com.codengineassessment.utils.hideKeyboard
-import com.google.android.material.internal.ViewUtils.hideKeyboard
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
 

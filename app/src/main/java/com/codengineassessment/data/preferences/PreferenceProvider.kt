@@ -8,7 +8,6 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
 
-
 class PreferenceProvider(var context: Context) {
     private var PRIVATE_MODE = 0
     private val PREFERENCE_NAME = "delphic_demo"
@@ -22,13 +21,6 @@ class PreferenceProvider(var context: Context) {
 
     fun getData(key: String): String? {
         return preference.getString(key, null)
-    }
-    fun saveLong(key: String, value: Long) {
-        preference.edit().putLong(key, value).apply()
-    }
-
-    fun getLong(key: String, defaultValue: Long): Long? {
-        return preference.getLong(key, defaultValue)
     }
 
     fun clearAllPref(): Boolean {

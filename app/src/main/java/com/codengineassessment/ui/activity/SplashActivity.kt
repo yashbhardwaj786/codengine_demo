@@ -1,17 +1,13 @@
 package com.codengineassessment.ui.activity
 
 import android.annotation.SuppressLint
-import android.content.pm.ActivityInfo
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import androidx.lifecycle.ViewModelProvider
 import com.codengineassessment.R
 import com.codengineassessment.common.BaseActivity
 import com.codengineassessment.common.BaseViewModel
 import com.codengineassessment.common.ModuleMaster
 import com.codengineassessment.data.preferences.PreferenceProvider
-import com.codengineassessment.databinding.ActivityMainBinding
 import com.codengineassessment.databinding.ActivitySplashBinding
 import com.codengineassessment.notifiers.Notify
 import com.codengineassessment.ui.viewmodel.MainViewModel

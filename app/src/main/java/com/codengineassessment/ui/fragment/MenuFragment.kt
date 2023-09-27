@@ -31,7 +31,6 @@ import com.codengineassessment.utils.Constant.Companion.CART_ITEM_ADDED
 import com.codengineassessment.utils.showCartCount
 import com.codengineassessment.utils.showToast
 import org.kodein.di.generic.instance
-import org.kodein.di.newInstance
 import org.parceler.Parcels
 
 class MenuFragment : BaseFragment(), AddToCartContract {

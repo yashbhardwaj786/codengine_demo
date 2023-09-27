@@ -26,7 +26,6 @@ import com.codengineassessment.utils.showCartCount
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 import org.kodein.di.generic.instance
-import androidx.lifecycle.Observer
 import com.codengineassessment.data.db.TransactionData
 import com.codengineassessment.ui.bottomsheet.ToGoContract
 import com.codengineassessment.ui.bottomsheet.ToGoDialogFragment

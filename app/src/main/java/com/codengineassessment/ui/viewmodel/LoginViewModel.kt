@@ -1,6 +1,5 @@
 package com.codengineassessment.ui.viewmodel
 
-import android.database.Observable
 import androidx.databinding.ObservableField
 import com.codengineassessment.common.BaseViewModel
 import com.codengineassessment.notifiers.Notify

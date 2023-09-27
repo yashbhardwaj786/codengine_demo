@@ -14,7 +14,6 @@ import com.codengineassessment.data.db.TransactionData
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.databinding.FragmentTransactionBinding
 import com.codengineassessment.ui.activity.MainActivity
-import com.codengineassessment.ui.adapter.ProductListItemAdapter
 import com.codengineassessment.ui.adapter.TransactionListItemAdapter
 import com.codengineassessment.ui.viewmodel.TransactionViewModel
 import com.codengineassessment.ui.viewmodelfactory.TransactionViewModelFactory

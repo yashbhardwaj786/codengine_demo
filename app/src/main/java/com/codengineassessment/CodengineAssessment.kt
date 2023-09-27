@@ -9,7 +9,6 @@ import com.codengineassessment.data.db.TransactionDataBase
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.repository.MenuRepository
 import com.codengineassessment.ui.viewmodelfactory.MainViewModelFactory
-import com.codengineassessment.network.NetworkConnectionInterceptor
 import com.codengineassessment.repository.CartRepository
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
@@ -49,7 +48,6 @@ class CodengineAssessment :
     }
     override val kodein = Kodein.lazy {
         import(androidXModule(this@CodengineAssessment))
-        bind() from singleton { NetworkConnectionInterceptor(instance()) }
         bind() from singleton { PreferenceProvider(instance()) }
         bind() from provider { MenuRepository() }
         bind() from provider { MainViewModelFactory() }
