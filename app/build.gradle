@@ -22,9 +22,9 @@ android {
 
     buildTypes {
         release {
-//            debuggable false
-            minifyEnabled false
-//            shrinkResources true
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
@@ -62,9 +62,8 @@ android {
             applicationId 'com.codengineassessment'
             dimension "tier"
             minSdkVersion 24
-            targetSdkVersion 33
+            targetSdkVersion 34
             resValue("string", "app_name", "${app_name}")
-            buildConfigField("String", "baseUrl", "${base_url}")
             dimension = 'tier'
         }
 

@@ -43,7 +43,7 @@ class MainActivity : BaseActivity() {
     override val kodein by kodein()
     private lateinit var mainViewModel: MainViewModel
     private val factory by instance<MainViewModelFactory>()
-    private val binding: ActivityMainBinding by lazyBinding()
+    val binding: ActivityMainBinding by lazyBinding()
     override val dataBinding: Boolean = true
     override val layoutResource: Int = R.layout.activity_main
     private val prefs: PreferenceProvider by instance()
@@ -108,7 +108,6 @@ class MainActivity : BaseActivity() {
 
         headerRoot.setOnClickListener {
             binding.drawerLayout.closeDrawers()
-            navController.navigate(R.id.menuFragment)
         }
 
         setupDrawerContent(navigationView)
@@ -164,7 +163,7 @@ class MainActivity : BaseActivity() {
     private fun setupDrawerContent(navigationView: NavigationView) {
         navigationView.setNavigationItemSelectedListener { menuItem ->
             val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment)
-            var fragment = navHostFragment?.childFragmentManager!!.fragments[0]
+            val fragment = navHostFragment?.childFragmentManager!!.fragments[0]
 
             when (menuItem.itemId) {
                 R.id.menuFragment -> {
@@ -212,15 +211,26 @@ class MainActivity : BaseActivity() {
     }
 
     override fun onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            finish()
-            return
-        }
         if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             binding.drawerLayout.closeDrawer(GravityCompat.START)
         } else {
-            super.onBackPressed()
+            val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment)
+
+            when (navHostFragment?.childFragmentManager!!.fragments[0]) {
+                is TransactionFragment -> {
+                    navigateToMenuPage()
+                }
+
+                is MenuFragment -> {
+                    finish()
+                }
+
+                else -> {
+                    super.onBackPressed()
+                }
+            }
         }
+
     }
 
     private fun logOut() {
@@ -242,5 +252,8 @@ class MainActivity : BaseActivity() {
     override fun onResume() {
         super.onResume()
         showCartCount(cartCountHome, prefs)
+    }
+    fun navigateToMenuPage(){
+        navController.navigate(R.id.menuFragment)
     }
 }

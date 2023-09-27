@@ -2,6 +2,7 @@ package com.codengineassessment.ui.fragment
 
 import android.os.Bundle
 import android.view.View
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -139,7 +140,8 @@ class MenuFragment : BaseFragment(), AddToCartContract {
     }
     override fun onResume() {
         super.onResume()
-        mainActivity.setToolBar(getString(R.string.menu))
+        mainActivity.setToolBar(getString(R.string.menu), showBackButton = false)
+        mainActivity.binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
 
     }
     private fun initRecyclerView(categoryProductsList: ArrayList<Categories>) {

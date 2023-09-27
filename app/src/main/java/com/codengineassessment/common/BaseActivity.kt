@@ -17,6 +17,7 @@ import com.codengineassessment.notifiers.Loader
 import com.codengineassessment.notifiers.Notify
 import com.codengineassessment.notifiers.NotifyException
 import com.codengineassessment.notifiers.NotifyRetry
+import com.codengineassessment.ui.activity.CartActivity
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.kodein
 
@@ -24,6 +25,7 @@ abstract class BaseActivity  : AppCompatActivity(), KodeinAware {
     override val kodein by kodein()
     private lateinit var baseBinding: ViewDataBinding
     var toolbar: Toolbar? = null
+    var backIconLayout: LinearLayout ? = null
     var title: TextView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -83,21 +85,17 @@ abstract class BaseActivity  : AppCompatActivity(), KodeinAware {
         title?.ellipsize = TextUtils.TruncateAt.END
         toolbar?.contentInsetStartWithNavigation = 0
         setSupportActionBar(toolbar)
-        val backIconLayout = findViewById<LinearLayout>(R.id.backIconLayout)
+         backIconLayout = findViewById<LinearLayout>(R.id.backIconLayout)
         val cartLayout = findViewById<RelativeLayout>(R.id.cartLayout)
         if(showBackButton){
-            backIconLayout.visibility = View.VISIBLE
+            backIconLayout?.visibility = View.VISIBLE
         }else {
-            backIconLayout.visibility = View.GONE
+            backIconLayout?.visibility = View.GONE
         }
         if(showCartIcon){
             cartLayout.visibility = View.VISIBLE
         }else {
             cartLayout.visibility = View.GONE
-        }
-
-        backIconLayout.setOnClickListener {
-            finish()
         }
     }
 }

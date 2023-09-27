@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
@@ -57,6 +58,10 @@ class TransactionFragment : Fragment(), KodeinAware {
 
             }
         })
+
+        mainActivity.backIconLayout?.setOnClickListener {
+            mainActivity.navigateToMenuPage()
+        }
     }
 
     private fun initRecyclerView(transactions: List<TransactionData>){
@@ -71,8 +76,9 @@ class TransactionFragment : Fragment(), KodeinAware {
 
     override fun onResume() {
         super.onResume()
-        mainActivity.setToolBar(getString(R.string.transaction), showCartIcon = false)
-
+        mainActivity.hideBackBtn()
+        mainActivity.setToolBar(getString(R.string.transaction), showCartIcon = false, showBackButton = true)
+        mainActivity.binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
     }
 
     override fun onDestroyView() {
