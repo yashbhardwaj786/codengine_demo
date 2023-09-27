@@ -11,7 +11,6 @@ import com.codengineassessment.repository.MenuRepository
 import com.codengineassessment.ui.viewmodelfactory.MainViewModelFactory
 import com.codengineassessment.network.NetworkConnectionInterceptor
 import com.codengineassessment.repository.CartRepository
-import com.codengineassessment.ui.viewmodelfactory.CartViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.LoginViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.MenuViewModelFactory
 import com.codengineassessment.ui.viewmodelfactory.ToGoViewModelFactory

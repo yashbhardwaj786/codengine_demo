@@ -3,8 +3,6 @@ package com.codengineassessment.utils
 import android.app.Activity
 import android.content.Context
 import android.content.res.ColorStateList
-import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
 import android.os.Build
 import android.util.DisplayMetrics
 import android.view.View
@@ -23,28 +21,6 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.regex.Pattern
-
-fun isInternetAvailable(ctx: Context): Boolean {
-    var result = false
-    val connectivityManager = ctx.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager?
-
-    connectivityManager?.let {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            it.getNetworkCapabilities(connectivityManager.activeNetwork)?.apply {
-                result = when {
-                    hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
-                    hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
-                    else -> false
-                }
-            }
-        } else {
-            connectivityManager.activeNetworkInfo.also { networkInfo ->
-                return networkInfo != null && networkInfo.isConnected
-            }
-        }
-    }
-    return result
-}
 
 fun showToast(context: Context?, message: String?) {
     Toast.makeText(context, message, Toast.LENGTH_LONG).show()
@@ -127,9 +103,6 @@ fun getWindowHeight(context: Context): Int {
     val displayMetrics = DisplayMetrics()
     (context as Activity).windowManager.defaultDisplay.getMetrics(displayMetrics)
     return displayMetrics.heightPixels
-}
-fun getCurrentTimestamp(): Long {
-    return System.currentTimeMillis()
 }
 
 fun getCurrentTime(): String {
