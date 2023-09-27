@@ -1,7 +1,6 @@
 package com.codengineassessment.repository
 
 import android.content.Context
-import com.codengineassessment.common.BaseRepository
 import com.codengineassessment.data.model.Categories
 import com.codengineassessment.data.model.Food
 import com.codengineassessment.data.model.MenuResult
@@ -10,7 +9,7 @@ import com.codengineassessment.utils.nullSafeErrorLogging
 import org.json.JSONObject
 import java.lang.Exception
 
-class MenuRepository ():  BaseRepository() {
+class MenuRepository {
 
     suspend fun fetchMenus(context: Context): Any {
         val menuResultObject = MenuResult()

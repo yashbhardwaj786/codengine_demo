@@ -1,13 +1,12 @@
 package com.codengineassessment.repository
 
-import com.codengineassessment.common.BaseRepository
 import com.codengineassessment.data.db.TransactionData
 import com.codengineassessment.data.db.TransactionRepoDao
 import com.codengineassessment.data.preferences.PreferenceProvider
 import com.codengineassessment.utils.Constant.Companion.PREF_USER_ID
 import kotlinx.coroutines.flow.Flow
 
-class CartRepository (private val transactionRepoDao: TransactionRepoDao):  BaseRepository() {
+class CartRepository (private val transactionRepoDao: TransactionRepoDao) {
 
     fun allUsers(preference: PreferenceProvider): Flow<List<TransactionData>>
     {
